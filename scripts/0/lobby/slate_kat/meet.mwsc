@@ -1,0 +1,114 @@
+set k name mystery
+face p 0 0
+p
+line "저기 키 큰 남자애 뭔가 낯이 익은데."
+face s 0 0
+s
+line "저 분홍 머리 여자애랑 수다 떠는 애?"
+checkflag _0.iris.met 1
+goto marker branch1y
+goto marker branch1n
+
+marker branch1y
+
+face s 0 3
+s
+line "설마 쟤도 줄 세워놓고 기다리게 했냐?"
+face p 1 0
+p
+line "아 쫌, 닥쳐봐.|p| 내 말은-"
+
+goto marker branch1e
+
+marker branch1n
+goto marker branch1e
+
+marker branch1e
+face l 1 0
+face p 0 1
+p
+line "쟤가 코스프레한 캐릭터가 내가 아는 애라서."
+face s 0 0
+s
+line "그래?"
+line "그게 누군데?"
+face p 1 0
+p
+line "\"슬레이트\"야.|p| 그냥 예전에 보던 만화에 나오던 캐릭터야."
+s
+line "제목이 뭔데?"
+face p 0 0
+p
+line "엄,|p| 비탄의 요새였나."
+face s 0 1
+s
+line "처음 들어보는 만화네,|p| 미안."
+s
+line "가서 쟤한테 덕밍아웃이라도 해 보지 그러냐?"
+face p 1 0
+p
+line "나 \"덕밍아웃\" 같은 거는 안 하거든."
+face p 0 2
+p
+line "...그래도 뭐,|p| 코스프레 한 거는 마음에 든다고 말해 보고 싶네."
+face p 0 0
+p
+line "*에헴*...|p|\n 어이!"
+l
+line "캐애애앳,|p| 진짜라니까,|p| 저 튜브들이 분명 운반을 하는-|p 30| |skip| "
+face k 0 0
+checkflag _0.chars_met 0
+goto marker 2y
+goto marker 2n
+marker 2y
+k
+line "이싼,|p| 저 여자애가 너한테 할 말이라도 있나 본데."
+setflag _0.Ethan 1
+goto marker 2e
+marker 2n
+k
+line "저 여자애 너한테 할 말이라도 있나 본데."
+
+marker 2e
+
+
+
+face l 0 0
+l
+line "정말?"
+p
+line "어이,|p| 그거 슬레이트 코스프레 한 거야?"
+l
+line "그치!|p| 내가 직접 만든 거야."
+face l 1 0
+l
+line "캣,|p| 내가 비탄의 요새 알아보는 사람 한 명은 있을 거라 말했지."
+face k 0 1
+set k name kat
+k
+line "그래,|p| 여기 사람만 천 명은 넘을 텐데 한 명이야 있겠지."
+l
+line "야,|p| 표본집단의 크기란 걸 따져 봐야지."
+face l 0 0
+l
+line "지금 여기 있는 사람들은 블랙아웃 전체 인구의 백만분의 1쯤일 건데."
+face l 1 0
+l
+line "이 안에 팬이 한 명이라면 이 도시 안에 만 명은 더 있다는 말씀."
+face k 0 2
+k
+line "그게 무슨 상관인데."
+line "설령 그렇다 쳐도,|p| 네가 지금 그딴 거 입고 온 것 자체가 바보 같거든."
+face s 0 1
+s
+line "그나저나 난 스몰스야,|p| 여기 비탄의 요새 광은 판도라라고 해."
+face l 0 0
+face p 1 0
+p
+line "자기소개는 나 혼자서도 할 수 있거든."
+
+
+setflag _0.slate_kat.met 1
+incflag _0.chars_met 2
+
+goto script 0/lobby/slate_kat/questions

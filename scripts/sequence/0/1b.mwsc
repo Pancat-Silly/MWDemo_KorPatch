@@ -1,0 +1,31 @@
+wait for marker line1
+pause
+speaker_voice terminal
+|style font fnt_pixel|소지하고 계신 플래티넘 티켓을 투입해 주세요!
+clear
+resume
+wait for marker line2
+pause
+|style font fnt_pixel|...그리고 케이블을 당신의 신경 포트에 연결해 주세요!
+clear
+resume
+wait for marker line3
+pause
+|style font fnt_pixel|잠시 기다려 주세요...
+resume
+clear
+wait for marker info
+pause
+|style font fnt_pixel|스캔 완료됨|p|\n참가자 이름:|p| 판도라
+|style font fnt_pixel|7263672번 티켓에 등록됨|p|\n(경로: 브리즈 콜라 탄산음료)
+|style font fnt_pixel|(동쪽 블랙아웃 도시에 있는 6-A24 자판기에서 획득함)
+speaker_icon pandora
+speaker_voice pandora
+... 소름 끼쳐...
+speaker_icon none
+resume
+text_auto 1
+speaker_voice terminal
+|style font fnt_pixel|보정을 시작합니다.
+wait for marker textclear
+clear

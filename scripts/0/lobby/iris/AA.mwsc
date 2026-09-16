@@ -1,0 +1,45 @@
+
+face p 1 0
+p
+line "있잖아,|p| 내가 사과한 건 창피해지는 걸 피하려고 한 거야."
+line "우리가 이따 대결하게 된다면 말이야."
+face p 0 0
+p
+line "솔직히, 나는 마인드웨이브에 관해서는 아무런 경험이 없거든."
+face p 0 2
+p
+line "그래서 이런 일들은 그냥 건드리고 싶지 않아서."
+face i 0 2
+i
+line "이게 너랑 무슨 상관이 있는데?"
+face p 0 4
+p
+line "이제 창피해질 일은 없겠네,|p| 적어도 말이야."
+face p 0 0
+p
+line "그래도 여전히 너랑 붙고 싶지는 않아."
+i
+line "...왜?|p| 내가 무섭니?"
+p
+line "아니...|p| 그냥 네가 좀 이상한 놈 같아서."
+face p 0 1
+p
+line "하지만 괜찮아.|p|\n정신 나간 사람은 아닌 것 같아 보이네."
+face i 2 0
+i
+line "오."
+face i 1 0
+i
+line "그래,|p| 그럴 수 있지."
+face i 0 0
+i
+line "네가 걱정할 이유는 전혀 없어."
+line "난 이 게임을 내 친구들이랑만 하거든.|p| 그것도 가끔."
+line "그마저도 정상적인 애들이랑만."
+setflag _0.iris.read.AA 1
+setflag _0.iris.branch AA
+function lobby_tick_time
+goto script 0/lobby/iris/questions
+
+
+

@@ -1,0 +1,71 @@
+p
+line "..."
+k
+line "나랑 대화하는 건 관심 없나 봐?"
+face p 0 0
+p
+line "아니,|p| 그런 건 아냐.|p| 단지 스몰스가 좀 갑자기 떠나 버려서."
+k
+line "뭐,|p| 그럼 분위기가 문제야?"
+line "갑자기 나랑 단둘이 서로 대화해야 되는 상황이?"
+p
+line "응.|p| 내가 처음 보는 사람들한테는 말을 잘 못 거는 성격이라."
+face p 0 0
+p
+line "그렇다고 네 탓은 절대 아니고."
+k
+line "그래."
+face p 1 0
+p
+line "..."
+k
+line "그 마음 나도 잘 알지..."
+line "내가 막 전학 왔을 때는,|p| 아무랑도 말 섞기 싫었거든."
+face k 0 2
+k
+line "반 애들이 전부 날 이상한 사람으로 생각했어서."
+face k 0 0
+k
+line "이싼만 빼고.|p| 걔도 나만큼이나 괴짜였으니까."
+line "그래서 나도 그냥 걔랑 어울리는 데 익숙해졌지."
+face p 0 0
+p
+line "오우,|p| 나도 솔직히 말해보자면,|p| 지금 이렇게 여기 있는 사람들한테 대화 한번 해보라고 한 것도 스몰스인데,"
+face p 0 2
+p
+line "걔가 날 이렇게 두고 가 버릴 줄은 몰랐네."
+face k 0 2
+k
+line "재밌네."
+face k 0 0
+k
+line "이싼은 좀 어설프긴 하지만,|p| 확실히 외향적이거든."
+line "걔랑 다니다 보니까 나도 입을 더 열게 되더라."
+face k 0 2
+k
+line "이제 우리 중에 괴짜는 걔지."
+face p 0 1
+p
+line "그런 것 같더라."
+line "솔직히,|p| 내가-|p 20| |skip| "
+set s x -70
+set p x +45
+face l 0 0
+face p 4 0
+s
+line "요, 우리 왔어."
+set k x +67
+set l x -48
+l
+line "안녕."
+face s 2 1
+s
+line "판도라,|p| 어떻게 비탄의 요새 같은 걸 여태껏 혼자만 알고 있었냐?"
+face s 0 2
+s
+line "이싼 말 들어보니까 역대급 명작이 따로 없던데."
+setflag _0.slate_kat.read.BBA 1
+setflag _0.pandora.alone 0
+setflag _0.slate_kat.branch BBA
+function lobby_tick_time
+goto script 0/lobby/slate_kat/questions

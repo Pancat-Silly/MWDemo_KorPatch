@@ -1,0 +1,72 @@
+face p 0 0
+face s 0 0
+s
+line "너 이 도시 좋아하는 것 같아 보이는데,|p| 여기서 이사한 이유가 뭐야?"
+face a 0 0
+a
+line "우음,|p| 맞아! 여기는 정말 좋지!"
+face a 1 0
+a
+line "내가 살면서 본 곳 중에서 제일 예뻐."
+line "빌딩들은 엄청 높지,|p| 불빛들은 화려하지..."
+face a 0 0
+a
+line "뭔가..."
+line "모든 게 새롭고 설레면서도,|p| 이상하게 익숙한 느낌이 들어."
+face p 0 2
+p
+line "근데,|p| 그렇게 좋아하면서 왜 이사를 간 거야?"
+face p 0 1
+p
+line "혹시 원래 살던 동네에 더 좋은 반짝이 실이라도 있는 건가?"
+face a 1 0
+a
+line "아니...|p| 그냥... 여기가 훨씬 더 나아서!"
+face a 0 0
+a
+line "사실 여기 오기 전까지는 반짝이 실 같은 게 있는지도 몰랐어."
+face a 1 2
+a
+line "근데 혼자 있으니깐 이런 것도 제대로 즐기기 어렵더라."
+face a 2 2
+a
+line "여기서 한 달이나 살았는데도 친구 한 명도 못 사겼어..."
+face a 2 2
+a
+line "아.. 제니가 여기 있었으면 좋았을 텐데..."
+line "...그러면 학교에서 친구를 새로 사귈 걱정은 안 해도 되잖아."
+face p 1 0
+p
+line "있잖아..."
+line "네 친구가 여기 없어서 문제라면,|p| 그냥..."
+face p 4 0
+p
+line "그 애를 여기로 오게 하면 되지 않을까?"
+face s 0 1
+s
+line "그래. 고등학생이 자기 친구를 데려오겠지,|p| 그것도 같은 고등학생을."
+face p 1 1
+p
+line "아,|p| 나 진짜 똥멍청인가."
+a
+line "나는 너가 멍청이라고 생각 안 해 판다!"
+face p 0 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag nickname_panda 1
+setflag _0.abbie.read.BAB 1
+setflag _0.abbie.branch BAB
+function lobby_tick_time
+goto script 0/lobby/abbie/questions

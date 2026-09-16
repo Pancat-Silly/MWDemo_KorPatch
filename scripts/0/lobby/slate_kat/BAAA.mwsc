@@ -1,0 +1,41 @@
+face s 0 1
+s
+line "이싼,|p| 캣,|p| 만나서 반가웠어."
+face l 0 0
+l
+line "동감이야.|p| 둘 다 게임 잘 해봐."
+face p 0 0
+s
+line "캣,|p| 네가 우승해서 너가 원하던 스튜디오 꼭 구하길 빌게."
+face k 0 2
+k
+line "고마워."
+l
+line "겁나게 쩔어줄걸.|p| 내가 캣한테 거기 티비 한 대 설치하라고 해둘게."
+line "그러고 나면 니들도 초대할 테니까 다 같이 비탄의 요새나 정주행하자고."
+face k 0 1
+k
+line "어,|p| 그럴 꿈 깨."
+line "내가 그림 그릴 때 너네가 그 이상한 애니나 보고 있으면,|p| 내가 집중할 수 있겠냐고."
+face k 0 2
+k
+line "그치만 너희 둘은 와도 좋아."
+face l 1 0
+l
+line "야이, 캣,|p| 내가 쉴 공간엔 아무도 초대 못 하는 거 알면서."
+line "차라리 내가 널 이기고 내 스튜디오에 네가 얹혀살게 해야겠다."
+face k 0 1
+k
+line "그래?|p| 그럼 어디 누가 이기나 보자고."
+s
+line "ㅋㅋㅋ"
+face s 2 1
+s
+line "잘들 있어라."
+face l 0 0
+l
+line "잘 가."
+setflag _0.smalls.slate_kat 1
+setflag _0.slate_kat.done 1
+setflag _0.slate_kat.read.BAAA 1
+function lobby_tick_time

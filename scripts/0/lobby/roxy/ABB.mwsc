@@ -1,0 +1,98 @@
+face p 0 0
+p
+line "나는 마인드웨이브를 한번도 제대로 해본 적이 없는데,"
+line "이길 가능성이 있긴 할까?"
+face r 0 0
+r
+line "음...|p| 가능할 것 같은데?"
+face r 0 1
+r
+line "여기에도 너처럼 경험 없는 사람들 많을걸."
+face s 2 1
+s
+line "그치,|p| 다만 첫 경기부터 프로랑 안 붙길 기도해야지."
+face s 0 0
+s
+line "너 수준에 맞는 상대랑 경기하면 자연스럽게 실력도 늘 테니깐."
+face p 1 0
+p
+line "근데,|p| 나는 게임만 하면 머리가 아프다니깐."
+face p 1 2
+p
+line "그리고 게임 몇 판 한다고 바로 프로 선수처럼 실력이 확 늘지도 않을 것 같고."
+face r 1 0
+r
+line "내 경험상,|p| 마인드웨이브를 잘 하려면 특정 성향을 가진 사람하고 한번 붙어봐야 해."
+line "같은 상대랑만 하다 보면 실력 발전이 더디거든."
+face r 1 1
+r
+line "그래서,|p| 난 일부러 여러 오락실에 다니면서 다양한 사람들하고 붙어 보지."
+face s 1 0
+s
+line "그치,|p| 나도 다른 오락실 가서 새로운 상대를 좀 만나 보고 싶기도 하고."
+face r 3 1
+r
+line "사실,|p| 너가 다니는 오락실 전에 가봤는데,|p| 거기에는 진짜 다양한 상대가 있더라."
+face r 3 0
+r
+line "그냥 너가 가는 시간대가 애매한 게 아닐까?"
+line "나도 거기서 몇 번 당황할 정도로 강한 상대를 만난 적이 있어가지고."
+face s 0 1
+s
+line "그럼 반대로,|p| 마인드웨이브를 제일 못하는 사람들이 많은 오락실은 어디야?"
+face r 2 1
+r
+line "노스 몰에 있는 오락실이지."
+face r 2 0
+r
+line "노스 블랙아웃 출신 애들은 그냥 마인드웨이브를 간단한 게임 정도로 보는 애들이 많아."
+checkflag _0.abbie.read.A 1
+goto marker branch1y
+goto marker branch1n
+
+marker branch1y
+
+face p 0 0
+p
+line "예상대로네."
+face s 0 0
+s
+line "거기선 막 새치기도 하던데."
+p
+line "너 혹시,|p| 거기서 흰색에 파마 머리 하고 있는 여자애랑 붙어본 적 있어?"
+face r 2 0
+r
+line "늙은 사람 말하는 거야?"
+face p 1 0
+p
+line "아니,|p| 어른 말고 우리 또래."
+face p 0 1
+p
+line "흰색 파마 머리에 하이텐션이고,|p| 아마 분홍색 옷 입으면서 엄청 시끄럽게 떠드는 애."
+face s 0 1
+s
+line "마인드웨이브 기계 앞에서 울 수도 있고."
+face r 3 1
+r
+line "음,|p| 그런 여자애는 본 적이 없는 것 같은데."
+face r 2 0
+r
+line "혹시 걔하고 붙는 게 두려운 거야? "
+face p 0 1
+p
+line "그냥 한번 물어본 거지 뭐."
+goto marker branch1e
+
+marker branch1n
+face r 0 1
+r
+line "심지어 거기는 비싸기까지도 해서,|p| 그닥 추천은 못 하겠어."
+goto marker branch1e
+
+marker branch1e
+
+
+setflag _0.roxy.read.ABB 1
+setflag _0.roxy.branch ABB
+function lobby_tick_time
+goto script 0/lobby/roxy/questions

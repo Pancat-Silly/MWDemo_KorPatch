@@ -1,0 +1,85 @@
+face p 0 0
+face s 0 0
+p
+line "야,|p| 돔."
+face p 0 2
+p
+line "넌 여기 온 이유가 뭐야?"
+line "오고 싶어서 온 건가?"
+d
+line "난 애초에 딱히\n 오고 싶지도 않았어."
+set s x -200
+set p x 0
+face d 0 1
+d
+line "이까짓 게 뭐 대수라고..."
+face p 0 0
+p
+line "왜?|p| 티켓을 땄으면\n 안 올 이유가 없지."
+face p 1 0
+p
+line "나는 이 게임 좋아하지도 않는데,|p| 여기 왔잖아."
+face d 0 0
+d
+line "있지,|p| 난 사실 이 게임은 좋아하는데,|p| 더럽게 못하거든."
+line "그래서 약국에서 얻었던 티켓도 그냥 친구한테 줘 버릴까 생각- |p| |skip| "
+face p 0 2
+p
+line "약국에서 얻었다고?"
+d
+line "응,|p| 기막히지."
+face p 0 4
+p
+line "상상이 안 갈 정도로 어이가 없네."
+face p 0 0
+p
+line "머리가 아파서 약을 사러 가야 하는 상황에서..."
+face p 1 2
+p
+line "...마인드웨이브 같은 걸\n 왜 하고 싶겠냐고."
+d
+line "그니깐 말야.|p| 병 안에서 티켓이 나오니까 나도 막,|p| 황당했지."
+face p 0 2
+p
+line "나라도 그랬겠다."
+line "그 말 들으니까\n 바로 상상이 가는데..."
+line "웬 폭삭 늙은 영감탱이 관절염 약 안에서,|p| 티켓이 나오면 어떠려나."
+face p 1 1
+p
+line "\"마인드웨이브? 그건 또 뭐더냐.|p|\n 이 늙어빠진 몸 이끌고 가봐야겠구마잉.\""
+face d 0 1
+d
+line "얌마,|p| 그렇게 늙은 사람이 게임해도 괜찮겠어?"
+face p 0 2
+p
+line "나도 안 괜찮던데,|p| 그럴 리가."
+face p 0 1
+p
+line "할아버지는 게임도 못하고 불쌍해서 어쩌나."
+set s x -70
+set p x 45
+d
+line "티켓을 손주들한테\n 주면 되겠지, 뭐."
+face s 1 0
+face p 4 0
+s
+line "그럴 수야 있겠지만, 그래도 마인드스케이프 쪽이\n 칠칠맞은 건 맞지."
+face s 0 0
+s
+line "티켓을 넣어선 안 될 곳에도 막무가내로 넣어대진\n 말아야 할 텐데."
+face p 0 0
+p
+line "나 솔직히 너 여기 있던 것도 까먹고 있었다."
+face s 2 1
+s
+line "그냥 너희 둘 얘기하는 거\n 듣던 중이었어."
+face s 0 0
+s
+line "돔,|p| 너 티켓 얘기 하던 중 아니었어?"
+face d 0 0
+d
+line "맞다,|p| 잠깐 딴소리를 했네,|p| 미안."
+setflag _0.dom.read.AB 1
+setflag _0.dom.branch AB
+function lobby_tick_time
+goto script 0/lobby/dom/questions

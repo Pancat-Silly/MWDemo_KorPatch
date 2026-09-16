@@ -1,0 +1,42 @@
+face p 1 0
+p
+line "하나 궁금한 게 있는데..."
+face p 0 0
+p
+line "록시가 마인드웨이브를 계속하는 이유가 뭘까?"
+line "마인드웨이브가 위험한 걸 본인이 더 잘 알 것 같은데."
+face s 1 0
+s
+line "나한테 물어볼 게 아니라 걔한테 직접 물어봤어야지."
+face p 0 2
+p
+line "아,|p| 걔한테 물어보면 무례할 것 같아서."
+face p 1 2
+p
+line "걔한텐 마인드웨이브가 전부인 것 같아 보여서."
+face s 2 0
+s
+line "너하고 다를 거 없어 보이는데."
+face p 0 2
+p
+line "무슨 소리니.|p| 음악은 완전히 창작의 영역이라고."
+line "게다가,|p| 기타 하나 친다고 속이 울렁거리진 않잖아."
+face s 0 2
+s
+line "마인드웨이브는 손가락에 굳은살을 배기게 하진 않지."
+face s 0 0
+s
+line "너도 처음 배울 땐 한동안 아팠잖아."
+face s 1 0
+s
+line "한두 번 한 게 아니라서 익숙해진 게 아닐까."
+face p 0 0
+p
+line "..."
+line "너 말 도저히 공감 못 해주겠다."
+
+
+setflag _0.smalls.roxy 2
+setflag _0.smalls.roxy.branch ABAA
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return

@@ -1,0 +1,40 @@
+
+face p 0 2
+p
+line "그럼 토너먼트에는 왜 참가한 거야?"
+face i 0 0
+i
+line "그러게,|p| 탈모 걸린 나이 먹은 놈들의 머릿속은 딱히 보고 싶지도 않고."
+face i 0 3
+i
+line "나는 그냥 천 만 달러가 필요해서."
+line "그 돈쯤이면 이상한 놈들 몇 명 따위는 버틸 수 있다고."
+face p 1 0
+p
+line "연쇄 살인마 같은 놈들이랑 붙게 된다고 생각해 봐."
+face p 4 0
+p
+line "그런 놈들은 어떻게 할 건데?"
+face i 0 0
+i
+line "그런 일을 막으려고 참가자들 배경 조사 정도는 하겠지."
+line "그런 놈들이 자기 뇌를 스캔하게 둘 만큼 멍청하진 않을 거야."
+line "특히,|p| 여기가 정부에서 지원해주는 대기업이라면 말이지."
+p
+line "..."
+face p 0 1
+p
+line "잘 모르겠네,|p| 가끔 몇 명은 그냥 들여보낸다는 것 같던데,"
+line "상황을 흥미롭게 만든다면서."
+face i 0 3
+i
+line "그게 나일지도 모르지."
+p
+line "놀랍지도 않을 것 같네."
+
+setflag _0.iris.read.AAA 1
+setflag _0.iris.branch AAA
+function lobby_tick_time
+goto script 0/lobby/iris/questions
+
+

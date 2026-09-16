@@ -1,0 +1,26 @@
+face s 0 0
+s
+line "우리는 이만 가볼게."
+face p 1 0
+p
+line "조언해줘서 고마워."
+line "비록 내가 희망이 없어 보일지라도."
+face r 2 0
+r
+line "글쎄,|p| 나는 네가 완전히 희망이 없다고는 생각하지 않아."
+line "그런 마음가짐으로는 본 실력을 못 뽐낼 테지만."
+face r 2 1
+r
+line "생각이 스스로에게 미치는 영향력을 너무 과소평가하지 마."
+face s 0 0
+s
+line "토너먼트 잘 하고 와."
+face r 0 1
+r
+line "..."
+
+setflag _0.smalls.roxy 1
+setflag _0.roxy.read.AAAA 1
+setflag _0.roxy.done 1
+
+function lobby_tick_time

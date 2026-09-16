@@ -1,0 +1,18 @@
+function cs_0_1_scr_terminalsong_start
+function play_crowd_ambience
+char pandora p left
+char terminal t right
+
+t
+line "|style font fnt_pixel|마인드스케이프 타워 토너먼트 참가 시스템에서 인사드립니다!"
+|style font fnt_pixel|...그리고 마인드스케이프 본사인,|p ,| 마인드스케이프 타워에 오신 것을 환영합니다.|p ,|
+|style font fnt_pixel|...세계에서 가장 혁신적인 인지 기술 및 엔터테인먼트 개발을 선도하는 회사인-|skip| 
+p
+line "어 그래 스킵스킵\n 어차피 관심 없어."
+face p 1 0
+
+빨리 좀 하자.|p|
+내 뒤에 백만 명은\n 서 있는 것 같거든?
+t
+line "|style font fnt_pixel|지금까지 가장 열정적이신 참가자분이시네요!|p|\n아주 좋습니다..."
+skip outro

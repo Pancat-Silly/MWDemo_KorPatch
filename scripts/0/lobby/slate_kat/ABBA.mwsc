@@ -1,0 +1,35 @@
+face s 0 1
+s
+line "이싼,|p| 캣,|p| 만나서 반가웠어."
+face l 0 0
+l
+line "동감이야.|p| 둘 다 게임 잘 해봐."
+face p 0 0
+p
+line "고마워.|p| 솔직히 내가 마인드웨이브에 그렇게 익숙하진 않아서."
+face p 1 0
+p
+line "너희 둘 상대할 생각에 약간 겁나네."
+face k 0 0
+k
+line "네가 날 닮았다면 평타 정도는 칠 수 있을걸.|p| 마인드웨이브를 딱히 많이 안 해 봤어도."
+face k 0 2
+k
+line "그런데 네가 이싼을 닮았다면 걱정하는 게 좋을 거야."
+face l 1 0
+l
+line "야, 내가 너보다 마인드웨이브 훨씬 잘하거든."
+k
+line "그래?|p| 그럼 어디 누가 이기나 보자고."
+s
+line "ㅋㅋㅋ"
+face s 2 1
+s
+line "잘들 있어라."
+face l 0 0
+l
+line "잘 가."
+setflag _0.smalls.slate_kat 1
+setflag _0.slate_kat.done 1
+setflag _0.slate_kat.read.ABBA 1
+function lobby_tick_time

@@ -1,0 +1,28 @@
+face s 0 0
+s
+line "우리는 이만 가볼게."
+face s 0 1
+s
+line "다음 층에서 또 만날 수 있었으면 좋겠네."
+face p 0 0
+p
+line "그치,|p| 행운을 빌어 록시."
+face p 0 1
+p
+line "내 생각에는 너는 충분히 가능성 있어."
+face r 1 1
+r
+line "고마워,|p| 네 두통이 빨리 나았으면 좋겠네."
+face p 1 2
+p
+line "이대로 계속 가면,|p| 토너먼트 끝날 때쯤엔 편두통 제대로 올 듯."
+face r 0 1
+r
+line "..."
+
+
+setflag _0.smalls.roxy 1
+setflag _0.roxy.read.ABAA 1
+setflag _0.roxy.done 1
+
+function lobby_tick_time

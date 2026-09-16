@@ -1,0 +1,44 @@
+face k 0 0
+k
+line "이싼이랑 나는 이만 가봐야겠어."
+face k 0 2
+k
+line "얘가 천장에 달린 튜브들에 대해 흥미로운 얘기를 해 주려던 참이었거든."
+face l 1 0
+l
+line "아아,|p| 맞다 그랬지."
+face s 0 1
+s
+line "좋아."
+line "판도라,|p| 우리 이 토너먼트 끝나자마자 비요 정주행 달리는 거다."
+face p 0 4
+p
+line "진심이야?"
+face s 0 2
+s
+line "응,|p| 나 우승하면 제일 먼저 하고 싶은 게 그건데."
+line "아니면,|p| 지금 당장 나가서 보던가."
+face p 0 2
+p
+line "고작 만화 보고 싶어서 우승할 기회를 날려버리겠다고?"
+face k 0 2
+k
+line "스몰스,|p| 내가 장담하는데 그거 이싼 말만큼 재밌는 거 절대 아니야."
+face s 0 1
+s
+line "그건 내가 직접 보고 평가해야지 뭐."
+face l 0 0
+l
+line "잘들 가라."
+face p 0 0
+p
+line "안녕."
+s
+line "이따 보자!"
+face k 1 0
+k
+line "잘 가."
+setflag _0.smalls.slate_kat 1
+setflag _0.slate_kat.done 1
+setflag _0.slate_kat.read.BBAA 1
+function lobby_tick_time

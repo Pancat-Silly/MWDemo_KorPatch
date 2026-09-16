@@ -1,0 +1,81 @@
+checkflag _0.pandora.kat 1
+goto marker branch1y
+goto marker branch1n
+
+marker branch1y
+
+face p 0 0
+p
+line "아까는 미안.|p| 나 왔어."
+face l 0 0
+l
+line "여어 반갑다.|p| 너희들 아예 가 버린 줄 알았지."
+face s 2 1
+s
+line "아니,|p| 그냥 잠깐 숨 돌리고 왔어."
+l
+line "그럴 수 있지."
+face k 0 2
+k
+line "다시 와줘서 기뻐."
+face l 1 0
+l
+line "그럼."
+face l 0 0
+l
+line "다만 스몰스한테 비탄의 요새 얘기 마저 못 해준 건 아쉽네."
+face s 0 1
+checkflag nickname_panda 1
+goto marker branch26y
+goto marker branch26n
+
+marker branch26y
+
+s
+line "아냐,|p| 오히려 판다가 날 끌고 가서 다행이었어."
+goto marker branch26e
+
+marker branch26n
+
+s
+line "아냐,|p| 오히려 판도라가 날 끌고 가서 다행이었어."
+goto marker branch26e
+
+marker branch26e
+
+face k 0 0
+s
+line "벌써 완전히 빠져든 것 같아서."
+l
+line "이여어어얼."
+k
+line "조심해 판도라."
+face k 0 2
+face l 1 0
+k
+line "내 주변에 그 애니 보는 사람들은 죄다 개찐따거든."
+face p 0 1
+p
+line "걱정 마,|p| 내 DVD들은 전부 스몰스 못 찾을 곳에 둘게."
+face s 0 2
+s
+line "아니,|p| 너도 같이 개찐따 돼야지."
+line "한번 처음부터 정주행해 보는 거야."
+setflag _0.slate_kat.odd 1
+setflag _0.smalls.slate_kat 1
+setflag _0.slate_kat.done 1
+function lobby_tick_time 8
+
+
+goto marker branch1e
+
+marker branch1n
+
+face s 0 1
+s
+line "여어,|p| 잘들 있었냐,|p| 우리 왔어."
+face l 0 0
+l
+line "반갑다."
+goto script 0/lobby/slate_kat/questions
+marker branch1e

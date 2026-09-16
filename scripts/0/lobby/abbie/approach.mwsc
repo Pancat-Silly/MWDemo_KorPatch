@@ -1,0 +1,19 @@
+face s 0 1
+s
+line "안녕,|p| 우리 다시 왔어."
+face a 0 0
+a
+line "오 안녕!|p| 무슨일이야?"
+
+
+
+
+
+
+
+
+
+
+
+goto script 0/lobby/abbie/questions
+

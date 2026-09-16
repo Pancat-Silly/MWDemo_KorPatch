@@ -1,0 +1,8 @@
+
+face s 0 0
+s
+line "또 물어볼 거 있어?"
+setflag _0.smalls.anythingelse 1
+goto script 0/lobby/smalls/questions
+
+

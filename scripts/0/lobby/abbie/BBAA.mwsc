@@ -1,0 +1,72 @@
+s
+line "음,|p| 토너먼트가 곧 있으면 시작할 것 같은데,|p| 우리 먼저 가봐야 할 것 같아."
+line "만나서 반가웠어."
+line "얘한테 판다라는 별명도 지어준 것도 고맙고."
+p
+line "작작해 좀,|p| 제발."
+a
+line "엣,|p| 별명이 마음에 안 들어?"
+p
+line "너는 괜찮아,|p| 나는 쟤가 나보고 저렇게 말하는게 싫은 거야."
+a
+line "야호!"
+line "그래서,|p| 가기전에,|p| 번호 좀 받을 수 있을까?"
+line "다시는 못 보게 되면 아쉬울 것 같아서!"
+s
+line "아 그래,|p| 자 여기."
+line "판다 것도 줄게."
+p
+line "내가 너 보고 내 전화번호까지 주라고 한 적은 없었는데, 뭐 어때."
+line "이렇게 된 겸 나랑 연락해도 좋아."
+line "나중에 보자,|p| 애비."
+s
+line "응,|p| 나중에 봐."
+a
+line "가기전에,|p| 잠깐!"
+p
+line "무슨 일이ㅇ-|skip| "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.smalls.abbie 1
+setflag _0.abbie.read.BBAA 1
+setflag _0.abbie.done 1
+function lobby_timer_set_interrupt 0
+function lobby_tick_time
+end_transition perlin
+sequence id "sqcs_0_abbiehug" script "sequence/0/abbiehug"

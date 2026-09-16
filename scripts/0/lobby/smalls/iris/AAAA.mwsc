@@ -1,0 +1,52 @@
+face p 0 2
+p
+line "...괜히 쟤랑 말 섞었나."
+face s 2 0
+s
+line "에이 야,|p| 그렇게까지 나빠지진 않을 거야."
+face s 0 0
+s
+line "어쨌든,|p| 줄 문제는 해결한 거 맞지?"
+face p 0 0
+p
+line "응...|p| 뭐,|p| 대충?"
+face p 0 2
+p
+line "그래도 여전히 쟤랑 붙기에는 좀 꺼려진다."
+face p 4 0
+p
+line "쟤가 연쇄 살인마일 수도 있는 거잖아?"
+face s 0 0
+s
+line "오우...|p| 잠깐,|p| 뭐?"
+face p 0 0
+p
+line "그냥 쟤가 농담한 거긴 한데,|p| 진심인지 아닌지 구분이 안 가더라고."
+face p 0 2
+p
+line "그래도 적어도 붙었을 때는 덜 창피하겠다."
+face s 1 0
+s
+line "그건 그런데..."
+face s 2 0
+s
+line "꼭 너 말대로 안 될 수도 있어."
+face p 1 0
+p
+line "그러면...|p| 난 굳이 쟤랑 말 안 섞어도 됐던 거야?"
+face p 1 2
+p
+line "내가 방금 한 짓이 아무 의미 없던 짓인 거고?"
+face s 0 1
+s
+line "당연히 의미는 있지!"
+face s 0 2
+s
+line "어쨌든 친구 하나는 생긴 거잖아."
+face p 0 2
+p
+line "쟤를 친구라 부를 생각은 없었는데."
+setflag _0.smalls.iris 2
+setflag _0.smalls.iris.branch AAAA
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return

@@ -1,0 +1,64 @@
+face p 0 2
+p
+line "...아까 기다리게 해서 미안해."
+face i 0 0
+i
+line "..."
+face i 0 1
+i
+line "그래."
+line "솔직히,|p| 그때 일은 기억하지도 못하는 것 같아."
+line "지금은 더더욱 그렇지."
+line "오히려,|p| 지금 네가 사과하러 왔다는 게 더 거슬리거든."
+line "그 일을 굳이 꺼내와서 큰 일로 만드려 하고 있잖아."
+line "이제 난 기억도 나지 않는 일로 네 기분을 편하게 만들어야 하는 사회적 의무가 생겨 버렸네."
+face i 0 0
+i
+line "..."
+p
+line "..."
+i
+line "그러니...|p| 사과 받을게,|p| 이게 네가 원하던 대답이라면."
+p
+line "음,|p| 내가 예상했던 것보다 더 예민하네."
+i
+line "너는 나를 잘 모르잖아."
+p
+line "난 그냥 사과가 하고 싶었던 거야."
+face i 0 0
+i
+line "난 이 불편한 사회적 상황이 싫어."
+face p 0 3
+p
+line "이 상황을 불편하게 만든 건 바로 너잖아."
+face p 1 2
+p
+line "이 일이 일어난 건 너 때문이기도 하지."
+face i 0 2
+i
+line "그러니까 내 말은..."
+face i 1 0
+i
+line "그래.|p| 미안해."
+face i 2 0
+i
+line "무례하게 굴려던 건 아니었는데."
+face p 0 0
+p
+line "그럴 수 있지."
+face p 0 1
+p
+line "너 근데 나보다 말이 많은 것 같은데."
+face i 0 3
+i
+line "확실히 그래."
+face p 0 0
+p
+line "..."
+face i 0 1
+setflag _0.iris.read.A 1
+setflag _0.iris.branch A
+function lobby_tick_time
+p
+line "|style color gray|(지금 떠나면 한심하게 보이겠지?)"
+goto script 0/lobby/iris/questions

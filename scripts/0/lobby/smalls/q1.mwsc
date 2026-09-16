@@ -1,0 +1,66 @@
+p
+line "그래서,|p| 우리 결국\n 마인드스케이프 타워에 왔네."
+face s 1 0
+s
+line "응.|p| 건물 안은 되게 웅장하고."
+p
+line "지금 여기에 몇 명이나 있을까? "
+face s 0 1
+s
+line "매년 초대되는 사람들 중에\n 몇천 명을 제외하고?"
+face p 0 2
+p
+line "그치 뭐."
+face p 1 2
+p
+line "그나저나 여긴 되게 비밀스러운 곳이잖아,|p| 우리가 여기 있어도 되는지 모르겠네."
+face p 1 0
+p
+line "내 말은,|p| 이 상황 자체를 생각해 본다는 게 말이 안 되잖아."
+line "이상한 빛나는 눈이 달린\n 악마 같은 빌딩."
+face p 0 2
+p
+line "그 빌딩 안에 지금 우리가 있고,|p| 이게 이상하지 않아??"
+face s 0 0
+s
+line "그치 뭐,|p| 근데 너는 이 기회를 놓치고 싶지는 않잖아?"
+face p 0 0
+p
+line "당연하지.|p| 꽁돈을 얻을 수 있는 기회인데."
+line "마인드스케이프가\n 악마 같은 회사더라도."
+face s 1 0
+s
+line "쟤네가 어떻게 악마 같은데?"
+face s 0 0
+s
+line "게임을 만들 법한 모습을 가진 회사가 아니라서?"
+p
+line "이렇게 악마 같은 모습을 투명하게 보여주는 회사를 한번 생각해 봐."
+face s 2 0
+s
+line "지금 당장 떠오르는\n 회사들은 딱히 없네."
+face p 0 2
+p
+line "그게 내가 말하고 싶은 거야."
+face s 2 1
+s
+line "..."
+
+
+
+setflag _0.smalls.q1 2
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+face p 1 0
+p
+line "난 스몰스가 어디로 샜는지 찾으러 가볼게."
+face p 0 0
+p
+line "너랑 이싼이랑 만나서 반가웠어."
+face k 0 0
+k
+line "그래,|p| 이따 보자."
+
+face k 0 2
+k
+line "이싼이 언제까지 마냥 주절댈지는 모르겠지만."
+set k x -200
+p
+line "..."
+set s dir -1
+set s side 1
+set s x 0
+face s 0 2
+checkflag nickname_panda 1
+goto marker branch26y
+goto marker branch26n
+
+marker branch26y
+
+s
+line "어이 판다."
+goto marker branch26e
+
+marker branch26n
+
+s
+line "어이 판도라."
+
+goto marker branch26e
+
+marker branch26e
+
+face p 0 2
+p
+line "야,|p| 너 대체 뭐 하다 왔냐?"
+s
+line "원래 좀 일찍 돌아오려 했는데..."
+line "...너희 둘 아주 대화에 빠져 있던 것 같더라."
+face s 2 1
+s
+line "그래서 끝날 때까지 기다렸지."
+
+setflag _0.smalls.slate_kat 1
+setflag _0.slate_kat.done 1
+setflag _0.slate_kat.read.BBBA 1
+function lobby_tick_time

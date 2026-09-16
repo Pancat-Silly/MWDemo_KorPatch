@@ -1,0 +1,18 @@
+function play_crowd_ambience
+char pandora p left
+char terminal t right
+t
+line "|style font fnt_pixel|마인드스케이프가 주최한,|p ,| 연례 마인드웨이브 토너먼트에 참가해 주셔서 감사합니다."
+face p 2 0
+p
+line "|speed 0.05|..."
+t
+line "|style font fnt_pixel|게이트를 통과하시게 되면,|p ,| 토너먼트를 참가하기 위한 준비는 끝이 납니다."
+|style font fnt_pixel|이 문을 통과함으로써, |speed 2|여러분은 마인드웨이브 대회에서의 활동을 기록하고 모니터링할 수 있는 마인드스케이프의 법적 허가를 제공하고,|skip| 
+|style font fnt_pixel||speed 2|모든 기록을 경기를 전 세계에 방송하며, 앞으로 있을 마인드웨이브의 경험을 향상시키기 위해|skip| 
+|style font fnt_pixel||speed 2|마인드스케이프 신경망을 훈련하는 데 사용되는 것을 동의하는 것으로 간주하겠습니다.|skip| 
+|style font fnt_pixel|로비로 이동하여 토너먼트의 시작을 기다려 주세요.
+|style font fnt_pixel|가장 중요한 것은,|p ,| 즐거운 시간을 보내고, 다른 참가자들에게 친절하게 대하는 것입니다!
+|style font fnt_pixel|다시 한 번 마인드웨이브에 참여해 주셔서 감사하며,|p ,| 행운을 빕니다!
+p
+line "그러지 뭐."

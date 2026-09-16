@@ -1,0 +1,20 @@
+face s 2 0
+s
+line "돔,|p|	 네 곡 한번 더 들어볼 수 있을까?"
+face d 1 0
+d
+line "물론이지."
+function lb0_scr_dom_music 1 1
+d
+line "..."
+function lb0_scr_dom_music 0
+face s 2 1
+s
+line "좋네."
+
+
+
+
+
+
+

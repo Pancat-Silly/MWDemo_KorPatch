@@ -1,0 +1,29 @@
+checkflag _0.tutorial.fails 0
+goto marker 0fails
+checkflag _0.tutorial.fails 1
+goto marker 1fails
+
+goto marker 2fails
+
+
+marker 0fails
+잘했어!|p| 방금 건 좀 어려웠지?|p| 이제 간단한 걸 해 보자!
+show_controls
+이제 우리는 스페이스바로 너의 능력을 시험해 볼 거야!
+때를 기다렸다가...|p| 눌러야 할 타이밍에 스페이스바를 내려치는 거야!|p| 이해되지?
+goto marker end
+
+marker 1fails
+음...|p| 이해하는 데 몇 번 걸릴 수 있어...
+배경이 바뀔 때 스페이스바를 눌러 봐!|p| 이해되지?
+show_controls
+눌러야 할 타이밍에 스페이스바를 내려치는 거야!
+goto marker end
+
+marker 2fails
+배경이 바뀔 때 스페이스바를 눌러 봐!|p| 이해되지?
+show_controls
+눌러야 할 타이밍에 스페이스바를 내려치는 거야!
+goto marker end
+
+marker end

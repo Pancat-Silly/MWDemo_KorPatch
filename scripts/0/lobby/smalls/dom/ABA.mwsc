@@ -1,0 +1,60 @@
+p
+line "와."
+face p 1 0
+p
+line "돔 걔 앞에서 하고 싶은 말도 못 했네."
+line "원래 나는 누가 나한테 와서,|p| 그딴 식으로 자기소개를 하면 바로 저리 꺼지라 했을 텐데,"
+face p 0 1
+p
+line "걔는 왠지 모르게 호감 가더라."
+face s 0 1
+s
+line "나도.|p| 같이 음악 이야기나 더 할 수만 있었다면 좋았을 텐데."
+face s 0 0
+s
+line "다른 프로듀서랑도 소통 좀 해 보고 싶어서."
+line "지금 내 틀에서 벗어나지 않으면 발전이 없을 것 같거든."
+face p 0 0
+p
+line "나도 언제 한번 걔랑 같이 놀아 보고 싶은데."
+line "연락처를 못 받아서 아쉽네..."
+face p 0 2
+p
+line "그냥 네가 종이에 네 번호라도 적어 줬으면 되는 거 아니었냐?"
+face s 0 3
+s
+line "아."
+face s 0 0
+s
+line "그 생각은 전혀 못 했네,|p| 미안."
+face s 1 0
+s
+line "굳이 변명하자면,|p| 걔가 \"음악용 폰\" 얘기를 꺼낸 순간 합리적 사고라곤 전부 사라져서."
+line "비관적으로 보자면,|p| 자기 연락처 주기 싫어서 지어낸 이야기 같던데."
+face p 1 0
+p
+line "에이,|p| 내가 봤을 땐 걔는 진짜로 몰랐던 것 같은데?"
+face p 0 0
+p
+line "솔직히 그럴 수 있을 정도로 허당스럽더라."
+face s 0 1
+s
+line "그치.|p| 그러면 너가 직접 번호를 줄 생각은 안 해 본 거야?"
+face p 0 4
+p
+line "초면인 애한테 내 번호만 알려 줄 생각은 없어서."
+face p 0 0
+p
+line "게다가,|p| 어차피 토너먼트가 끝나고 나서 밖에서 만나면 되잖아."
+face s 0 0
+s
+line "그러면,|p| 입구 앞에 있는 인파 속에서 걔를 찾길 빌어야겠네."
+p
+line "걔가 먼저 우릴 찾을지도 모르지.|p| 걔는 워낙 신비한 놈이라서."
+face s 0 2
+s
+line "그럴 수도 있겠네."
+setflag _0.smalls.dom 2
+setflag _0.smalls.dom.branch ABA
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return

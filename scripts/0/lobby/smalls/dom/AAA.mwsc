@@ -1,0 +1,66 @@
+face s 1 0
+s
+line "너 진짜로 마인드스케이프 타워 밖에서 공연하게?"
+face p 0 1
+p
+line "당연한 소릴."
+face p 0 0
+p
+line "물론 오늘은 아니고,|p| 이따가 돔이랑 다시 만나서\n 이야기해 보려고."
+face s 0 1
+s
+line "솔직히 생각만큼은 나도 좋은데."
+face s 2 0
+s
+line "문제는,|p| 내가 지금 마인드스케이프한테\n 찍히고 싶지가 않아서..."
+face s 0 0
+s
+line "...솔직히 얘네가 내가 몰래 들어온 걸 모를 리가 없잖아."
+line "그런데 무슨 이유인지,|p| 쟤네가 신경 안 쓰는 거고."
+face p 0 0
+p
+line "슈퍼에서 약간 훔쳐도 신경 안 쓰는 거랑 비슷한 건가 보지."
+face s 0 0
+s
+line "뭐?"
+face p 1 0
+p
+line "그래,|p| 슈퍼에서 몇몇 개 가져가도 별일 아니니까 그냥 두지 않아?"
+line "네가 언제 나한테 알려 줬을 텐데."
+face s 1 0
+s
+line "아, 그거."
+line "그건 걔네가 신경을 안 쓰는 게 아니라, 너한테 눈감아주는 거라고 착각하게 만드는 거지."
+face s 0 0
+s
+line "일단 그렇게 사소한 잘못들을 쌓아 놓고선 나중에 그걸 심각한 중범죄로 몰아가려고."
+face p 0 2
+p
+line "오우,|p| 내가 완전 잘못 이해했었네."
+s
+line "그럴 수도 있지."
+face s 2 0
+s
+line "아무튼 내가 하고 싶은 말은,|p| 내가 마인드스케이프한테 한번 더 눈에 띄는 일이 생기면, 걔네가 날 잡으러 올지도 몰라."
+face p 1 0
+p
+line "그래,|p| 그러면 아쉬운 대로\n 공연은 너 없이 해야겠어."
+face s 0 0
+s
+line "..."
+face s 1 0
+s
+line "걔들이 내가 몰래 들어온 걸 알면, 네가 나랑 관계된 것도\n 눈치챘을 거야."
+line "그러니까... 아마 너까지\n 지켜보고 있을걸."
+p
+line "이런 젠장."
+face p 0 0
+p
+line "어차피 어떡하든 결과가 똑같을 거면,|p| 너도 그냥 오지 그러냐."
+face s 0 1
+s
+line "그래,|p| 알았어.|p| 결국 설득당했네."
+setflag _0.smalls.dom 2
+setflag _0.smalls.dom.branch AAA
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return

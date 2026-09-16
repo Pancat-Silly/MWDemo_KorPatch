@@ -1,0 +1,16 @@
+pause at marker stareend
+wait for marker line1
+speaker_voice announcer_small
+|style font fnt_pixel|판도라님,|p| 축하합니다!
+|style font fnt_pixel|당신은 2라운드로 진출할 만큼 잘 해내셨습니다!
+clear
+jump to marker backstart
+resume
+
+pause at marker backend
+wait for marker line2
+|style font fnt_pixel|이제,|p| 다음 층으로 안내하겠습니다.
+|style font fnt_pixel|문이 열리면,|p| 엘리베이터에서 퇴장하신 후\n 다음 라운드까지 대기하여 주시기 바랍니다.
+clear
+jump to marker openstart
+resume

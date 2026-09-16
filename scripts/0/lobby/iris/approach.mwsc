@@ -1,0 +1,60 @@
+
+set p x 0
+set s x -200
+
+checkflag _0.iris.branch 0
+goto marker seenQ1N
+goto marker seenQ1Y
+
+marker seenQ1N
+face p 4 0
+p
+line "|style color gray|(좋아, 다시 한번 해보자고)"
+face p 1 2
+p
+line "안녕."
+face i 0 2
+i
+line "...다시 왔네?..."
+goto marker end
+
+marker seenQ1Y
+checkflag _0.iris.branch A
+goto marker awkwardHi
+checkflag _0.iris.branch A2
+goto marker awkwardHi
+
+face i 0 1
+i
+line "뭐 찾은 거라도 있어?"
+face p 0 0
+p
+line "딱히."
+line "천장에는 케이블 덩어리가 있지."
+line "자판기는 하나도 보이지가 않지."
+i
+line "꽤 심각한데."
+goto marker end
+
+
+
+marker awkwardHi
+face p 0 4
+p
+line "..."
+face i 0 0
+i
+line "..."
+setflag _0.iris.branch A2
+goto marker end
+
+
+
+marker end
+setflag _0.pandora.alone 1
+goto script 0/lobby/iris/questions
+
+
+
+
+

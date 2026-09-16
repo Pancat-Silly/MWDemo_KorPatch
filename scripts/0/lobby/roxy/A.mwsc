@@ -1,0 +1,52 @@
+face p 0 0
+face s 0 0
+p
+line "좋아, 이게 내가 물어보는 것들 중에 가장 중요한 거야."
+face p 0 2
+p
+line "이 두통... 언젠가는 나아지겠지?"
+face r 1 0
+r
+line "음,|p| 두통?|p| 물은 충분히 마셨어?"
+face p 1 2
+p
+line "나 물 충분히 마셨는데..."
+face r 0 0
+r
+line "마인드웨이브 하다가 두통이 생기는 사람은 별로 못 봤는데."
+face r 0 1
+r
+line "내가 봤던 두통을 겪는 사람들은 다 오래 했을 때의 경우였어."
+face p 0 2
+p
+line "나는 지금까지 두 번밖에 안 해 봤는데, 전부 다 두통이 있네."
+line "방금 전까지도 그랬고."
+face p 0 4
+face s 0 2
+s
+line "너무 복잡한 생각을 많이 해서 그런 것 같은데."
+face p 1 2
+p
+line "아니면,|p| 마인드웨이브가 진짜로 몸에 해로운 걸 지도 모르지."
+face r 1 0
+r
+line "둘 다 어느 정도 맞는 말이야."
+line "마인드웨이브를 하는 사람이 어떠냐에 따라서 달라지지."
+face r 1 1
+r
+line "애초에 원래부터 하기 싫었던 상태에서 하면 더 안 좋고."
+face r 1 0
+r
+line "반대로 너무 몰입하는 것도 문제가 될 수 있어."
+face s 1 0
+s
+line "너무 오래 할 때는 부작용이라도 생긴다는 거야?"
+face p 1 2
+p
+line "와, 그 말 들으니까 진짜 하기 싫어지네."
+
+
+setflag _0.roxy.read.A 1
+setflag _0.roxy.branch A
+function lobby_tick_time
+goto script 0/lobby/roxy/questions

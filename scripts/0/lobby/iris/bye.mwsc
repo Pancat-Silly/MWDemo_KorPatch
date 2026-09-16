@@ -1,0 +1,10 @@
+face p 0 1
+p
+line "음,|p| 나 잠깐 어디 갔다 올게."
+line "뭔가 마실 것 좀 찾아보게 한번 둘러보고 오려고."
+face i 0 1
+i
+line "그래.|p| 이따 봐."
+p
+line "이따 보자."
+setflag _0.pandora.alone 0

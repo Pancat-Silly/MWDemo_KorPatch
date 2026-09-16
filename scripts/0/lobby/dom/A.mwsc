@@ -1,0 +1,124 @@
+face s 0 1
+face p 0 2
+p
+line "그래서,|p| 너 설마,|p|\n 마주치는 사람마다\n 노래 들려주고 다니는 거야?"
+d
+line "아니,|p| 이거 들려준 건\n 너희 둘이 처음인데."
+face p 0 2
+d
+line "안 그래도 내 얘기 하고 있길래,|p| 좋아하겠다 싶었지."
+face d 0 0
+d
+line "거기다,|p| 네가 멋져 보이기도 했고."
+p
+line "고맙다?"
+face p 0 0
+p
+line "너 마주친 게 우리라\n 재수 좋은 줄은 아는 거지?"
+face d 0 1
+d
+line "무슨 소리야?"
+p
+line "다른 사람들한테는 네가 하는 짓이\n 진짜 짜증 날 수도 있잖아."
+line "특히 여기 사람들은 전부 다 예민해 보이던데."
+face p 0 2
+p
+line "너 그러다 누가\n 죽빵이라도 날리면 어쩌게?"
+face d 0 0
+d
+line "글쎄,|p| 너는 그렇게\n 예민해 보이지는 않던데."
+face p 1 0
+face d 0 1
+d
+line "내 곡이 느낌 있으니까\n 그런 거 아니야?"
+face p 0 4
+p
+line "..."
+face p 0 0
+p
+line "그렇다 치자."
+face p 1 0
+p
+line "사실 꽤 괜찮긴 했어."
+face p 0 2
+p
+line "그런데 너를 소개하는 방식은 다시 생각해 보는 게 좋을걸."
+face s 1 0
+s
+line "나는 좋은 방식이라 생각하는데?"
+face s 1 0
+s
+line "확실히 강렬한 인상을 심어 줬잖아.|p| 우리도 해 보는 건 어때?"
+face p 1 0
+p
+line "무슨,|p| 말이 되는 소리를 해라."
+face p 1 2
+p
+line "음악 홍보하려다\n 이빨 털리긴 싫거든."
+face s 2 1
+s
+line "내가 마우스피스라도\n 하나 사줄게."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.dom.read.A 1
+setflag _0.dom.branch A
+function lobby_tick_time
+goto script 0/lobby/dom/questions

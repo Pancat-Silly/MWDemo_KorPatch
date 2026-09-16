@@ -1,0 +1,44 @@
+face s 0 0
+s
+line "애비가 우릴 위해서 돈을 써 준다는 건 좀 고마운데."
+line "노스 블랙아웃 물가는 너무 비싸잖아."
+face p 1 0
+p
+line "그치,|p| 근데 오직 날 위해서 쟤 돈을 쓴다는 건 좀 미안하네."
+face p 1 2
+p
+line "뭐, 사실...|p| 그렇게까지 미안하진 않을지도 모르겠지만."
+face p 0 0
+p
+line "근데 우리가 진짜로 애비랑 놀 때,|p| 걔가 우리한테 친구 비 내주는 느낌은 좀 그럴 것 같아."
+line "그리고 나는 저런 상황이 싫고."
+s
+line "어,|p| 무슨 말 하는지 이해된다."
+p
+line "차라리 우리 동네에서 같이 노는 게 더 낫지."
+face p 4 0
+p
+line "물론 노스로 시작하는 도시에도 재밌는 거 많긴 한데..."
+face s 1 0
+s
+line "내 친구 중에 거기로 여행 가려고 돈 모으던 친구가 있었는데,"
+face s 0 0
+s
+line "결국 여행 당일에는 예산이 부족해서 제일 허름한 호텔에서 묵었다 하더라."
+face p 0 2
+p
+line "블랙아웃 시티는 여행지로 진짜 최악인 것 같아."
+face s 0 0
+s
+line "그치, 내가 걔한테도 그 말 했었어."
+face s 0 1
+s
+line "특히 걔는 원래,|p| 여기 살던 애잖아."
+line "노스 블랙아웃에서 겨우 한 시간 거리인데 말이야."
+
+
+
+setflag _0.smalls.abbie 2
+setflag _0.smalls.abbie.branch BAAA
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return

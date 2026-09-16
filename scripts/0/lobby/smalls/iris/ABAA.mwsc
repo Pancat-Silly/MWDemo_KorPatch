@@ -1,0 +1,40 @@
+face p 0 0
+p
+line "있잖아,|p| 내가 방금 깨달은 건데...|p| 쟤한테 이름을 물어보는 걸 까먹었어.|p|"
+face s 1 0
+s
+line "줄 문제는 해결한 건 맞지?"
+face p 0 2
+p
+line "응...|p| 뭐,|p| 대충?"
+line "그래도 여전히 쟤랑 붙기에는 좀 꺼려진다."
+face p 1 0
+p
+line "내 말은,|p| 쟤가 착하긴 한데."
+face p 0 0
+p
+line "뭔가 좀 수상한 면이 있어."
+face p 0 2
+p
+line "쟤가 이기면 받은 상금으로 마인드스케이프에 투자할 거래."
+face s 1 0
+s
+line "나쁘지 않은 생각인 것 같은데?"
+face s 0 1
+s
+line "이 회사 주식 가지고 있으면 꽤 짭짤할 것 같아."
+p
+line "와,|p| 너 지금 무슨 문제라도 생겼냐?"
+face p 1 2
+p
+line "마인드웨이브를 즐겨서 하는 사람들은 다들 기업 홍보 대사가 되는 거야, 뭐야?"
+face s 0 0
+s
+line "설마 그럴 리가."
+face s 0 1
+s
+line "그래도 결국,|p| 나도 얘네 주식을 살 것 같긴 해."
+setflag _0.smalls.iris 2
+setflag _0.smalls.iris.branch ABAA
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return

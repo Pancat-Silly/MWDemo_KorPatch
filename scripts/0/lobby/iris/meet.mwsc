@@ -1,0 +1,84 @@
+
+face p 0 0
+p
+line "음...|p| 아까 줄 설 때 저 여자애 앞을 막았었는데,"
+face p 1 2
+p
+line "좀 짜증 난 것 처럼 보이더라."
+face s 1 0
+
+s
+line "사소한 일이잖아."
+face s 0 0
+s
+line "근데 그게 신경 쓰이면,|p| 가서 사과해 보지 그래?"
+face s 0 1
+s
+line "그냥 해 보라는 소리야."
+face p 1 2
+p
+line "최악의 제안이네."
+line "오히려 상황만 더 악화시킬 것 같아."
+checkflag _0.alex.met 1
+goto marker branch1Y
+goto marker branch1N
+
+marker branch1N
+
+goto marker branch1E
+
+marker branch1Y
+p
+line "특히 아까 알렉스랑 대화했던 것 같이 말이야.\n"
+goto marker branch1E
+
+marker branch1E
+face s 0 0
+s
+line "마음의 준비 단단히 해."
+line "만약 쟤랑 붙었을 때 완패해도 놀라지 말라고."
+face p 4 0
+p
+line "..."
+face p 0 0
+p
+line "잘못한 건 잘못한 거니까,"
+line "가서 사과하는 게 맞는 것 같아."
+face s 2 1
+s
+line "좋은 생각이야!|p| 난 저 멀리 가 있을게."
+set p x 0
+set s x -250
+wait 1 second
+i
+line "..."
+face p 0 0
+p
+line "*에헴* \n|p|저기."
+face i 2 0
+i
+line "..."
+face p 0 2
+p
+line "..."
+line "*에헴*"
+face i 0 1
+i
+line "너 어디 아프냐?"
+p
+line "아니. 목 좀 가다듬은 거야."
+i
+line "아,|p| 그래."
+line "안녕."
+face p 1 2
+p
+line "안녕?"
+setflag _0.pandora.alone 1
+setflag _0.iris.met 1
+incflag _0.chars_met 1
+
+goto script 0/lobby/iris/questions
+
+
+
+

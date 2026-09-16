@@ -1,0 +1,83 @@
+face p 0 0
+p
+line "몰래...|p| 왔다고?"
+face p 4 0
+p
+line "그러니까,|p| 그냥 현관문을 슬쩍 연 다음에 지하철 타고 온 거야?"
+face a 0 0
+a
+line "우음,|p| 사실 창문으로 나왔긴 한데,|p| 뭐 거의 맞지!|p|"
+face p 0 1
+p
+line "너는 그런 행동을\n 할 사람으로 안 보이는데."
+line "진짜로,|p| 전-혀 안 그래 보여."
+a
+line "뭐 어때?|p| 여기로 이사 오기 전에는,|p| 거의 맨날 몰래 밖으로 나왔어!"
+line "내 친구가 거의 매일 밤 같이 나가서 놀자고 했거든."
+face s 0 1
+s
+line "친구들이 여는 파티에\n 자주 초대돼서?"
+face a 2 2
+a
+line "아니!|p| 나는 한 번도 파티에 초대받은 적이 없어."
+face a 0 0
+a
+line "내 생각에는,|p| 우리 고향에 있는 또래들은 아무도 파티를 열지 않았을걸?"
+face a 1 2
+face s 0 0
+a
+line "왜냐면 다들 부모님이 서로 알고 있는 경우가 대다수여서,|p| 일탈을 하기 어려웠을 수도 있거든."
+face p 0 2
+p
+line "그럼...|p| 밤에는 어디 가려고\n 몰래 나가는데?"
+face a 0 0
+a
+line "공원에!"
+face a 1 0
+a
+line "물론 낮에도 충분히 같이 만나서 놀 시간이 많은데,|p| 밤에는 우리끼리만 있을 수 있었거든."
+face a 1 2
+a
+line "우리 고향은 밤엔 저엉말 조용했었는데.."
+face p 1 0
+p
+line "이 도시에는 빵빵거리는 소리하고 사이렌 소리가 밤에도 끊이질 않는데,|p| 믿기지 않네..."
+face a 0 0
+a
+line "아앗,|p| 우리도 사이렌 소리 들었었어!"
+face a 2 2
+a
+line "이웃이 우릴 경찰에 신고했었을때,|p| 한 달 동안 외출금지 당했었어."
+line "그때 너무 화났어서 하루 종일 제니랑 말도 안 했었지."
+face a 1 2
+a
+line "근데 지금 생각해보면 조금 웃겨, |p| 조금 그립기도 하고."
+face a 0 0
+a
+line "그래서 지금 오늘, 그때 그 기분을 다시 느껴보려고 여기에 왔지!"
+face s 0 1
+s
+line "바로 그거지."
+face a 1 0
+a
+line "그리고 지금 너네들하고 같이 있네."
+face a 1 0
+a
+line "그리고..."
+face a 0 0
+a
+line "...지금 보니 판다! 너 제니랑 좀 닮은 것 같아!"
+face p 0 0
+p
+line "...?"
+
+
+
+
+
+
+setflag nickname_panda 1
+setflag _0.abbie.read.BB 1
+setflag _0.abbie.branch BB
+function lobby_tick_time 2
+goto script 0/lobby/abbie/questions

@@ -1,0 +1,31 @@
+char pandora p left
+char smalls s right
+
+s
+line "충분히 둘러보고 왔어?"
+p
+option add name "응." marker "yes"
+option add name "아니." marker "no"
+options show
+
+marker yes
+
+p
+line "응,|p ,| 이 정도면 충분한 것 같아.|p .| 이제 시작할 때까지 기다리자."
+
+s
+line "그래."
+function start_next_round
+skip outro
+goto marker end
+
+marker no
+
+p
+line "음, 아니.|p .| 조금 더 둘러봐야 될 것 같아."
+face s 2 1
+s
+line "그래,|p ,| 그래.|p .| 그렇게 하겠다면 뭐."
+goto marker end
+
+marker end

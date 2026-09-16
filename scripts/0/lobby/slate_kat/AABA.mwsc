@@ -1,0 +1,38 @@
+face p 0 1
+p
+line "이싼,|p| 캣,|p| 만나서 반가웠어."
+face s 0 1
+s
+line "둘 다 게임 잘 하고 와."
+face k 0 0
+k
+line "나야 잘할 수 있지.|p| 이싼은 음,|p| 모르겠다."
+face k 0 1
+k
+line "1라부터 탈락해서 여기 같이 와준 거 후회하게 만들지 마."
+face l 1 0
+l
+line "야 내 걱정은 하지 말라니까."
+line "내 비요 컬렉션을 완성하려는 의지 하나만으로 죄다 이길 수 있다고."
+k
+line "너 설마 그딴 소리를 나한테 하면 내가 후회를 덜 할 거라고 생각한 거야?"
+face s 0 1
+k
+line "상금을 거기다 낭비할 생각이면 떨어지길 기원할게."
+face k 0 0
+k
+line "너희들도 물론 봐줄 생각은 없어."
+face k 0 2
+k
+line "그래도 뭐,|p| 잘 되길 빌게."
+face p 0 0
+p
+line "나중에들 봐."
+face l 0 0
+l
+line "잘 가."
+
+setflag _0.smalls.slate_kat 1
+setflag _0.slate_kat.done 1
+setflag _0.slate_kat.read.AABA 1
+function lobby_tick_time

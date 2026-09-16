@@ -1,0 +1,143 @@
+face s 0 0
+checkflag nickname_panda 1
+goto marker branch22y
+goto marker branch22n
+
+marker branch22y
+
+s
+line "판다,|p| 너하고 슬레이트하고 같이 나한테 이 애니 좀 알려줘라."
+goto marker branch22e
+
+marker branch22n
+
+s
+line "판도라,|p| 너하고 슬레이트하고 같이 나한테 이 애니 좀 알려줘라."
+goto marker branch22e
+
+marker branch22e
+
+
+
+face p 0 2
+p
+line "너는 지금 뿔이랑 웃는 얼굴로 득시글대는 미친 행사에 와 있는데..."
+
+
+face p 4 0
+p
+line "...여기서 만화 이야기가 나오냐."
+face k 0 0
+face p 1 0
+p
+line "게다가,|p| 나 기억나는 것도 얼마 없거든."
+face l 0 0
+l
+line "걱정들 마셔.|p| 나 이 애니 짱 좋아하니까."
+line "비탄의 요새는,|p| 영원한 전쟁을 소재로 한 옛날 30년대 애니야."
+line "엄청 재밌어.|p| 중세 배경을 사이버펑크랑 섞어놨거든."
+face s 0 1
+checkflag nickname_panda 1
+goto marker branch26y
+goto marker branch26n
+
+marker branch26y
+
+s
+line "넌 이 애니를 어쩌다 알게 된 거야,|p| 판다?"
+line "네 취향 같지는 않은데."
+
+goto marker branch26e
+
+marker branch26n
+
+s
+line "넌 이 애니를 어쩌다 알게 된 거야,|p| 판도라?"
+line "네 취향 같지는 않은데."
+
+goto marker branch26e
+
+marker branch26e
+
+face p 1 2
+p
+line "내가 막 엄청 좋아하는 애니는 아니고,"
+face p 0 0
+p
+line "아빠한테 DVD가 하나 있길래 가끔 돌려 본 정도야."
+face k 0 2
+k
+line "너희 아빠 몇 살이신데??"
+face p 0 2
+p
+line "모르겠다,|p| 한 마흔쯤 되려나."
+l
+line "야아아아,|p| 판도라,|p| 너도 사이보맨서 세력이 더 간지나는 거 완전 동의하지?"
+face p 1 0
+p
+line "반대편은 거의 기억도 안 나는데 뭐,|p| 그랬나?"
+face p 0 2
+p
+line "걔네들이 인간-악마 하이브리드 맞지?"
+face k 0 0
+k
+line "아니,|p| 그쪽은 \"슬레이트\" 세력이야."
+line "넬본 세력이 기계 혼령들이고."
+face s 0 0
+face p 4 0
+p
+line "아 맞다."
+k
+line "\"슬레이트\"는 사이보맨서지."
+face p 0 0
+p
+line "아,|p| 그렇구나."
+face s 0 1
+checkflag nickname_panda 1
+goto marker branch29y
+goto marker branch29n
+
+marker branch29y
+
+s
+line "판다,|p| 우리 이 애니 언젠간 한번 같이 보자."
+goto marker branch29e
+
+marker branch29n
+
+s
+line "판도라,|p| 우리 이 애니 언젠간 한번 같이 보자."
+goto marker branch29e
+
+marker branch29e
+
+l
+line "조오오아쓰.|p| 이제 우리 넷 전부 팬인 거네."
+line "그 말인즉슨 이 도시 안에는 팬이 한,|p| 4만 명은 있다는 소리지."
+face k 0 1
+k
+line "아직도 개소리 같은데."
+
+k
+line "설령 그렇다 쳐도 3만 명이겠지.|p|"
+line "난 팬 아니잖아."
+face l 1 0
+l
+line "무슨.|p| 너 완전 비요덕이잖아.|p|"
+line "모르는 게 없으면서."
+face p 0 0
+l
+line "너 정도면 명예 팬이지."
+k
+line "이싼,|p|"
+line "네가 그 애니 타령만 끝없이 해 대니까 내가 그만큼 아는 거잖아."
+line "받아주니까 고마운 줄 알아."
+l
+line "야,|p|"
+line "당연하지."
+line "내가 우승하면 감사의 뜻으로 좋은 거 하나 사 줄게."
+
+setflag _0.slate_kat.read.A 1
+setflag _0.slate_kat.branch A
+function lobby_tick_time 2
+goto script 0/lobby/slate_kat/questions

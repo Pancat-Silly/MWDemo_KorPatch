@@ -1,0 +1,99 @@
+face s 0 0
+face p 0 0
+s
+line "그래서,|p| 애비."
+line "좀 어때?|p| 토너먼트에 대해서 느끼는 거라도 있어?"
+line "이 게임은 평소에 자주 하는 편인가?"
+face a 0 0
+a
+line "우음...|p| 아니!|p| 나 완전 초보야!!"
+face a 1 2
+a
+line "최근에 했긴 했는데 그땐 너무 못해서 그 자리에서 울었어.."
+p
+line "허어,|p| 내가 너보다 더 못할 수도 있는데."
+face s 2 1
+s
+line "내 생각엔,|p| 포기하고 기절하는 것보단 우는 게 더 나아 보이는데."
+face p 0 2
+p
+line "무슨 소리야,|p| 나 기절 안했거든?"
+face s 0 1
+s
+line "그래 그래,|p| 근데 포기한 건 맞잖아."
+face a 0 0
+a
+line "에이 그래도 괜찮아!|p| 나도 이 게임 적응하기 지인짜 힘들었어."
+face a 1 0
+a
+line "요즘엔 가끔씩만 하고 있어."
+line "우리 부모님이 날 데려갈 수 있는 오락실이 노스몰에 있는 곳뿐이거든 헤헤.."
+s
+line "전에 엄청 붐빈다는 곳으로 들어봤어."
+p
+line "도시에 있는 모든 마인드웨이브 기체가 있는 곳은 항상 붐벼,|p| 스몰스."
+face s 2 0
+s
+line "응...|p| 이번 연도에는 특히 더."
+face s 0 0
+s
+line "연습하고 싶어하는 예비 티켓 소지자가 너무 많아."
+face a 1 2
+a
+line "엇...|p| 여길 위해서 연습하는 건 생각도 못 해 봤는데.."
+face p 0 0
+p
+line "아쉽네,|p| 근데 내 생각엔 너도 나만큼이나 비슷하게 경험해 봤을 것 같아."
+face a 0 0
+a
+line "그럼 우리 둘 다 한번 잘 해보자!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.abbie.read.A 1
+setflag _0.abbie.branch A
+function lobby_tick_time
+goto script 0/lobby/abbie/questions

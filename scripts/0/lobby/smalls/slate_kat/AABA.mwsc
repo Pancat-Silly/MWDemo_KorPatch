@@ -1,0 +1,40 @@
+face s 0 1
+s
+line "이 토너먼트 끝나면 우리 같이 비탄의 요새나 보자."
+face p 0 0
+p
+line "야,|p| 그거 슬레이트 말만큼 재밌는 거 절대 아니거든."
+face p 1 0
+p
+line "요즘에 아무도 관심 가져주는 사람이 없는 이유도 있지."
+face p 0 1
+p
+line "우리 아빠 DVD가 값어치라도 있었으면,|p| 단숨에 팔아버리는 건데."
+face p 1 2
+p
+line "그럼 탈락하더라도 여기 와서 건져 가는 건 있을 거 아냐."
+face s 0 1
+s
+line "무슨 말을 그렇게 하냐,|p| 여기서 얻는 경험도 충분히 값지잖아."
+face s 1 0
+s
+line "게다가 너 그 애니 기억도 잘 안 난다면서.|p| 다시 보는 것도 괜찮을 텐데."
+face s 0 1
+s
+line "어쩌면 슬레이트 말보다 재밌을지도 모르지. 찍먹 정도는 할 수 있잖아."
+face p 0 0
+p
+line "아 몰라,|p| 그래 봤자 찐따들 애닌데."
+face p 0 4
+p
+line "딱 1화만 같이 보는 거다.|p| 근데 노잼이면 그걸로 끝이야."
+face s 2 1
+s
+line "달랑 한 화 가지고 전체를 판단하면 안 되지."
+face p 1 0
+p
+line "그래,|p| 2화까지.|p| 근데 그것도 노잼이면 다신 나랑 오타쿠 쓰레기 같은 거 같이 보자는 말 꺼내지 마라."
+setflag _0.smalls.slate_kat 2
+setflag _0.smalls.slate_kat.branch AABA
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return

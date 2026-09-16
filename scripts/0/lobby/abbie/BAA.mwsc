@@ -1,0 +1,64 @@
+face s 0 0
+face p 0 0
+p
+line "그런데, 여기까지 오는데 별일은 없었어?"
+face p 1 2
+p
+line "이 도시에서 대중교통만큼은, 유일하게 잘 돌아가잖아."
+face s 1 0
+s
+line "그치,|p| 그냥 교통 패스 하나만 사면 되니깐."
+line "판도라랑 나도 어찌 저찌 돈을 모아서 매달 사곤 해."
+face s 0 1
+s
+line "이 도시에서는 할게 많으니깐,|p| 값어치가 있는 거지."
+face p 0 0
+p
+line "나는 거의 대부분 학교 갈 때에만 쓰는데."
+face a 0 0
+a
+line "고민해 봤는데,|p| 너무 비싸 보여서 그냥 표 하나만 샀어."
+face a 1 2
+a
+line "우리 부모님은 지하철이 \"지저분하고 위험하다\"면서 타지 말라고 하셔서."
+face a 0 0
+a
+line "그리고 우리 부모님은 내가 걸어가기에 너무 먼 곳이면,|p| 그냥 차로 데려다주시려고 하셔."
+face p 0 2
+p
+line "와 블랙아웃 도시에서 운전하는거는 상상도 못 하겠는데."
+line "모든 주차장은 항상 만석이잖아."
+line "혹시 너네 부모님은 매번 20분 넘게 빈 주차 자리를 찾으시는걸 좋아하시니?"
+face a 1 2
+a
+line "우음...|p| 사실,|p| 우리 부모님도 좋은 자리 못 찾으면 엄청 짜증 내시긴 해."
+face a 0 0
+a
+line "근데 뭐, 그렇게까지 불편한 건 아니야.|p|"
+line "나도 여기까지 오는 데 정류장에서 그 정도 걸렸거든."
+face p 0 0
+p
+line "여기서 5분 거리밖에 안 되는 정류장이 있는데?"
+face a 1 2
+a
+line "앗,|p| 그래?"
+face a 2 2
+a
+line "그때는 안내 방송이 잘 안 들렸기도 하고,"
+line "그리고 어디서 내려야 할지 잘 몰라서,|p| 그냥 지나쳤나 봐."
+face a 1 0
+a
+line "근데 다행히도 타워가 엄청 큰 바람에,"
+face a 0 0
+a
+line "그냥 이 타워 보면서 방향 맞춰서 걸어왔어!"
+face s 0 0
+s
+line "와, 세상에."
+
+
+
+setflag _0.abbie.read.BAA 1
+setflag _0.abbie.branch BAA
+function lobby_tick_time
+goto script 0/lobby/abbie/questions

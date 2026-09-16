@@ -1,0 +1,56 @@
+face p 0 0
+p
+line "그러니까, 마인드웨이브가 정확히 어떻게 머리에 영향을 준다는 거야?"
+face p 0 2
+p
+line "그냥 듣고 넘길 일이 아닌 것 같은데."
+face s 0 2
+s
+line "에이, 나는 너보다 훨씬 많이 하는데도 지금 멀쩡하잖아."
+face s 0 3
+s
+line "음...|p| 아마도."
+face r 3 1
+r
+line "가끔씩만 하면 아무 문제 없을 거야."
+face r 2 0
+r
+line "근데 프로로 뛰면 얘기가 달라지지."
+line "몇 시간씩 하는 날도 있으니까."
+face s 0 0
+s
+line "그 정도면 현실 감각이 좀 흐려질 수 있겠는데?"
+face r 3 0
+r
+line "그치. 그래서 아무나 할 수 있는 일이 아니야."
+line "우리 학교 팀에도 들어왔다가 한 달 안에 포기하는 사람들도 거의 대다수고."
+face p 1 0
+p
+line "잘됐네. 이 기회에 \"진짜\" 스포츠를 하러 갈 수 있으니까."
+r
+line "다른 사람들의 생각에 오래 노출되면 자기 정체성이 흔들릴 수도 있어."
+face r 2 0
+r
+line "나랑 같이 연습하던 파트너는 내 기억을 자기 기억인 것처럼 착각하더라."
+line "게임에서 내 기억들을 너무 자주 보니까 자기 머리가 스스로 속아 버린 거지."
+s
+line "와 세상에.|p| 너는 그런 적 없어?"
+r
+line "아니,|p| 나는 이런 건 안 겪으려고 조심하는 편이야."
+line "예전에는 이런 문제를 겪었긴 했지만, 지금은 괜찮아."
+face s 0 3
+s
+line "음..."
+
+
+
+
+
+
+
+
+
+setflag _0.roxy.read.AA 1
+setflag _0.roxy.branch AA
+function lobby_tick_time
+goto script 0/lobby/roxy/questions

@@ -1,0 +1,78 @@
+set d name mystery
+face p 0 0
+p
+line "쟤 후드티 멋지네."
+face s 0 0
+s
+line "가서 어디서 구한 거지 물어보기라도 하게?"
+face p 1 0
+p
+line "글쎄,|p| 굳이?|p| 난 그냥 저게 멋져서."
+face s 0 1
+s
+line "내 말은,|p| 네가 원한다면\n 내가 대신 가서 물어볼 수 있다고."
+p
+line "내가 언제-|p| |skip| "
+face d 0 0
+d
+line "요."
+face p 0 0
+p
+line "오우,|p| 엄...|p| 안녕?"
+face d 1 0
+d
+line "이거 한번 들어 보실?"
+face d 1 1
+function lb0_scr_dom_music 1
+
+d
+line "..."
+face s 0 3
+face p 0 4
+s
+line "..."
+p
+line "..."
+d
+line "..."
+function lb0_scr_dom_music 0
+p
+line "..."
+face d 1 0
+d
+line "어때?"
+face s 0 0
+face p 0 2
+p
+line "이게 뭔데?"
+face d 1 0
+d
+line "내 곡이야,|p| 맘에 들었음 좋겠네."
+face p 0 0
+p
+line "어우,|p| 모르겠는데."
+face p 1 0
+p
+line "일단 생각할 시간부터 주지 그래."
+face d 0 1
+d
+line "오,|p| 그래 그럼."
+face d 0 0
+d
+line "참고로 내 이름은 돔이야."
+line "내 친구들은 믹스마스터 D라 부르는데,|p| 이건 조금 구리니까 편하게 돔이라 불러줘,|p| 하하."
+set d name dom
+face p 4 0
+p
+line "돔이라 부르지 뭐."
+face p 0 0
+p
+line "난 판도라야."
+line "얘는 스몰스고."
+setflag _0.dom.met 1
+incflag _0.chars_met 1
+goto script 0/lobby/dom/questions
+
+
+
+

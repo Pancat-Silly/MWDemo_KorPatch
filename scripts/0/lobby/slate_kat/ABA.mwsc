@@ -1,0 +1,71 @@
+face p 0 0
+face s 0 1
+s
+line "이싼,|p| 너가 그 코스튬 직접 만들었다고 했지?"
+l
+line "응.|p| 완벽하진 않지만 내 눈엔 꽤 마음에 들어."
+face p 0 1
+p
+line "멋진걸."
+face s 0 1
+s
+line "동감."
+l
+line "진짜 고맙다.|p| 캣은 아무래도 별로 내켜 하질 않거든."
+face k 0 1
+k
+line "겁나 창피하니까 안 내키는 거지."
+face s 0 0
+s
+line "야,|p| 말이 좀 심하잖아."
+l
+line "아니, 쟤 말이 맞아.|p| 그걸 교회까지 입고 가진 말았어야 했는데."
+face p 0 0
+p
+line "너희 같이 교회도 가?"
+face l 0 0
+l
+line "아니,|p| 캣만 조부모님이랑 같이 가지.|p| 난 그때밖에 안 가봤고."
+face l 1 0
+l
+line "네가 그렇게 차려입은 모습은 처음 보더라."
+face k 0 0
+k
+line "난 별로 가고 싶지도 않은데,|p| 항상 끌려간다고."
+line "그 주 일요일에는 이싼까지 데려가자며 고집 부리셨는데."
+face s 2 1
+s
+line "어으,|p| 그 결정 후회하셨겠네."
+face k 0 0
+k
+line "응...|p| 소란이 일어나서 결국 할머니가 사과 편지까지 쓰셨어."
+face l 0 0
+face s 0 0
+l
+line "근데 웃기긴 엄청 웃겼지.|p| 어떤 아저씨는 나한테 속죄용 팸플릿을 주더라."
+face l 1 0
+l
+line "액자에 넣어서 내 방에 떡하니 걸어 놨지."
+face k 0 2
+k
+line "맞아|p| 네 복장 보고 악마 숭배자인 줄 알았다며."
+face p 0 2
+p
+line "어휴,|p| 여기 블랙아웃 시티랑 마인드스케이프 본부랑 다른게 뭐야."
+face p 0 0
+p
+line "눈에 보이는 건 전부 뿔로 도배해 놨는데."
+face p 0 1
+p
+line "마인드스케이프야말로,|p| 진짜 악마들 아닌가."
+face l 0 0
+l
+line "이야아아 네 말이 맞네.|p| 이곳 구석구석이 하나같이 악마스럽잖아."
+line "쩔지 않냐?"
+face p 0 4
+p
+line "..."
+setflag _0.slate_kat.read.ABA 1
+setflag _0.slate_kat.branch ABA
+function lobby_tick_time
+goto script 0/lobby/slate_kat/questions

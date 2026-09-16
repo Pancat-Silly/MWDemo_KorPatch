@@ -1,0 +1,72 @@
+face s 0 0
+face p 0 2
+p
+line "야,|p| 토너먼트가 지금 곧 시작할 거 같아서,|p| 우린 이만 가볼게."
+line "티켓 얘기는 나중에 마저 하자고."
+face p 0 0
+p
+line "안녕."
+face s 2 0
+s
+line "우리 셋 다 다음 층까지\n 올라가야 하던가 하지..."
+face s 0 1
+s
+line "돔,|p| 너 번호 좀 알려줄 수 있어?"
+face d 1 0
+d
+line "이거 내 전화기 아닌데."
+face p 1 2
+p
+line "그게 전화기 아니면 뭔데요,|p| 님아."
+d
+line "여기다가는 유심을 안 넣어놨어.|p| 내 음악용 폰이거든."
+line "내 \"진짜\" 휴대폰은 지우기 싫은\n 잡다한 것들 투성이라,|p|\n 내가 만든 곡들을 공유하려고\n 공기계를 새로 구했지."
+face p 0 0
+p
+line "그럼 그냥...|p| 거기에서 유심만 빼고 공기계에 끼우면 되는 거 아냐?"
+face d 1 1
+d
+line "..."
+face d 1 0
+d
+line "와."
+face d 0 0
+d
+line "천재냐?"
+p
+line "..."
+face p 0 2
+p
+line "좋아,|p| 아무튼."
+face p 0 4
+p
+line "여기 입구에서 우리 올 때까지 기다리든지 해."
+d
+line "좋아."
+face s 0 1
+s
+line "나 우승할 때까지 기다리려면\n 한참 걸릴 텐데."
+face p 0 0
+p
+line "쟤 말은 걸러듣고."
+line "어차피 우리 전부 첫번째 라운드에서 광탈할 게 뻔하잖아."
+d
+line "모르지 뭐."
+line "그럼 나중에들 보자고."
+face p 0 1
+p
+line "잘 있어."
+s
+line "이따 보자."
+
+
+
+
+
+
+
+
+setflag _0.smalls.dom 1
+setflag _0.dom.done 1
+setflag _0.dom.read.ABA 1
+function lobby_tick_time 2

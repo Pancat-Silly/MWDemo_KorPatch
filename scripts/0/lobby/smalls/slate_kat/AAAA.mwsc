@@ -1,0 +1,40 @@
+face p 0 0
+p
+line "솔직히,|p| 비탄의 요새가 무슨 내용이었는지도 기억이 잘 안 나."
+face p 1 0
+p
+line "아빠한테 DVD가 있어서 가끔 보긴 했는데,|p| 내용은 전혀 이해가 안 되더라."
+face s 0 1
+s
+line "흠,|p| 이싼한테 물어볼 걸 그랬나."
+line "너한테 절실히 필요한 재교육을 시켜줄 수 있었을 텐데."
+p
+line "난 됐어."
+face s 2 0
+s
+line "그래."
+face s 0 2
+s
+line "스포 없이 봐야 나을지도 모르지."
+face p 1 2
+p
+line "나 너랑 비탄의 요새 볼 생각 없거든."
+face s 0 1
+s
+line "에이,|p| 찍먹이라도 해보자고."
+face p 4 0
+p
+line "..."
+face p 0 2
+p
+line "딱 1화만 같이 보는 거다.|p| 근데 노잼이면 그걸로 끝이야."
+face s 2 1
+s
+line "달랑 한 화 가지고 전체를 판단하면 안 되지."
+face p 1 0
+p
+line "그래,|p| 2화까지.|p| 근데 그것도 노잼이면 다신 나랑 오타쿠 쓰레기 같은 거 같이 보자는 말 꺼내지 마라."
+setflag _0.smalls.slate_kat 2
+setflag _0.smalls.slate_kat.branch AAAA
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return

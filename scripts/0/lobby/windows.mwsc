@@ -1,0 +1,49 @@
+char pandora p left
+char smalls s right
+
+face s 0 0
+s
+line "뭐 보는 거야?|p| 창문?"
+face p 0 0
+p
+line "응,|p| 저거 좀 마음에 안 드네."
+face s 2 0
+s
+line "내 생각엔 네가 여길 싫어해서 판단력이 흐려진 것 같은데."
+face s 0 1
+s
+line "야,|p| 저거는 그냥 창문이잖아."
+line "햇빛이 비추게 설계한 점은 칭찬하고 싶네."
+face p 1 0
+p
+line "다른 건물은,|p| 그냥 창문으로 걸어가면 밖을 볼 수 있는데."
+face p 0 0
+p
+line "마인드스케이프는 그렇게 만들고 싶지 않은가 봐?|p| 대체 왜?"
+face p 0 2
+p
+line "자만심 때문에 그런 건가?"
+line "아니면 사람들이 여기 있는 동안 아무도 다른 생각을 하지 않을 거라고 믿는 걸까?"
+face p 1 2
+p
+line "아니면 여기가 정말 기괴하다는 사실을 숨기려고 하는 걸까?"
+face s 1 0
+s
+line "사람들이 유리창에\n 손자국을 남길까 봐\n 그렇게 만든 걸 수도 있어."
+line "덕분에 매년 이 대회를 열 때마다 청소 비용을 많이 절약할 거야."
+face p 4 0
+p
+line "..."
+face p 0 0
+p
+line "완전 깨끗한 창문이긴 하네."
+line "그런데 저 무지막지하게 큰 창문은 어떻게 청소하는 걸까?"
+face s 0 0
+s
+line "마인드스케이프 타워의 창문 청소 담당자들이 불쌍하네."
+face s 0 1
+s
+line "아마 너보다 여길 더 싫어하는 유일한 사람들일지도 몰라."
+
+setflag _0.windows.done 1
+function lobby_tick_time 0.5

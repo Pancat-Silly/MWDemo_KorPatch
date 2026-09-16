@@ -1,0 +1,27 @@
+checkflag _0.tutorial.fails 0
+goto marker 0fails
+checkflag _0.tutorial.fails 1
+goto marker 1fails
+
+goto marker 2fails
+
+
+marker 0fails
+잘했어!
+이게 마이크로게임을 플레이하는 가장 기초적인 방법이야...|p| 근데 그거 알아? |p| 앞에서 나온 인터페이스들이 서로 합쳐질 수도 있어!
+show_controls
+방향키와 스페이스바를 동시에 사용하는 인터페이스의 마이크로게임을 한번 해 보자!
+goto marker end
+
+marker 1fails
+앗,|p| 이번에는 조금 까다롭지?|p| 다시 한번 해 보자!
+show_controls
+상하좌우 키나 WASD 키,|p| 둘 중 네가 더 선호하는 것을 쓸 수 있다는 걸 기억해!
+goto marker end
+
+marker 2fails
+show_controls
+상하좌우 키나 WASD 키,|p| 둘 중 네가 더 선호하는 것을 쓸 수 있다는 걸 기억해!
+goto marker end
+
+marker end

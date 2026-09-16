@@ -1,0 +1,94 @@
+face s 0 1
+face p 0 0
+p
+line "그나저나,"
+line "난 이 타워가 멋지다고 생각해본적이 없어.|p|\n전혀."
+face p 0 2
+p
+line "있잖아 좀,|p| 불쾌하게 보이지 않아?"
+face s 2 1
+s
+line "너가 진정으로 그렇게 생각한다면,|p| 나는 애비편에 설게.|p| 이 타워가 도시에 랜드마크잖니?"
+face s 0 1
+s
+line "만약 너가 이 타워 안에 있는것들 중 어느것도 멋지다고 생각 안하면..."
+face s 0 2
+s
+line "...난 그냥 너가 우리랑 반대 의견을 가지고있다고 생각할게."
+face a 1 2
+a
+line "맞아!|p| 나는 줄 서는 동안 이 타워를 올려봤는데,|p| 목이 부러질정도로 높은 타워가 정말 멋졌어."
+face a 4 0
+face s 0 0
+a
+line "그리고 화면에 눈까지있잖아!|p|\n완저언 멋지지 않아?"
+face p 1 0
+p
+line "그 눈이 너네 집 창문을 항상 바라본다고 생각해봐."
+face p 1 2
+p
+line "내가 자려고 할 때마다|p| 저 눈이 항상 나를 쳐다본다고."
+face s 2 0
+face a 0 0
+s
+line "착시현상 아니야?"
+line "저 눈이 실제로 널 바라볼수는 없잖아."
+face p 0 0
+p
+line "그러냐?|p| 그래도 무서운건 매한가지야."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.abbie.read.ABB 1
+setflag _0.abbie.branch ABB
+function lobby_tick_time 2
+goto script 0/lobby/abbie/questions

@@ -1,0 +1,60 @@
+p
+line "난 이만 스몰스 찾으러 가봐야겠어."
+k
+line "어, 그래.|p| 잘 가라 그럼?"
+face p 1 0
+face s 0 0
+p
+line "..."
+set k x -200
+set s dir -1
+set s side 1
+set l x +20
+set s x -75
+set l front_when_speak 0
+l
+line "...그러니까 한 마디로,|p| 잠복의 망명은 바로 이 정상에서-|p 30| |skip| "
+face s 0 1
+
+checkflag nickname_panda 1
+goto marker branch26y
+goto marker branch26n
+
+marker branch26y
+
+s
+line "어, 안녕 판다.|p| 벌써 심심해진 거야?"
+goto marker branch26e
+
+marker branch26n
+
+s
+line "어, 안녕 판도라.|p| 벌써 심심해진 거야?"
+
+goto marker branch26e
+
+marker branch26e
+
+face p 0 2
+
+p
+line "모르겠다,|p| 그냥 대화가 끊겨서."
+face l 0 0
+l
+line "뭔 일이야 판도라?|p| 마침 스몰스한테 제일 쩔어주는 파트 말해 주려던 참이었는데."
+line "너도 같이 들어도 돼."
+face p 0 0
+p
+line "난 괜찮아."
+face p 1 0
+p
+line "스몰스, 우리 다른 데 가볼래?"
+face s 0 3
+s
+line "오우,|p| 물론이지."
+face s 0 0
+s
+line "다음에 봐 이싼."
+
+setflag _0.pandora.alone 0
+setflag _0.pandora.kat 1

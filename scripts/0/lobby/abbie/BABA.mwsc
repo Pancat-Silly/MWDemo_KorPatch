@@ -1,0 +1,88 @@
+face a 1 2
+a
+line "판도라,|p| 스몰스,|p| 너네랑 얘기하는게 저엉말 재미있었어!"
+face a 2 2
+a
+line "근데 조금 있으면 우리가 헤어져야 할지도 몰라..."
+face a 1 2
+a
+line "...그래서 그런데,|p| 혹시 너 전화번호 좀 알 수 있을까?"
+face s 0 1
+s
+line "당연하지.|p| 자, 여기."
+line "언제든지 연락해도 좋아.|p| 이스트 블랙아웃으로 와주면 놀 수도 있고."
+face p 1 0
+p
+line "아니면 우리가 그쪽으로 갈 수도 있고..."
+line "그런데 우리는 그냥 음,|p| 공원 같은 곳에서 어슬렁거리거나 뭐라도 할 것 같아."
+line "다른 놀곳은 나한텐 너무 비싸."
+face a 0 0
+a
+line "괜찮아!|p| 내가 너네 둘을 위해서 돈을 쓸 수도 있어!"
+face p 4 0
+p
+line "오우,|p| 좋아 그럼."
+face p 0 1
+p
+line "그럼 우린 가봐야겠다."
+face p 1 0
+p
+line "..."
+face p 0 1
+p
+line "만나서 반가웠어,|p| 애비,|p| 나중에 만나자."
+line "너가 네 친구를 언젠가는 다시 만났으면 좋겠네."
+face a 4 1
+a
+line "와,|p| 나도 그랬으면 좋겠네!|p| 고마워!"
+face a 0 0
+a
+line "가기전에,|p| 잠깐!"
+face p 0 0
+p
+line "무슨 일이ㅇ-|skip| "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.smalls.abbie 1
+setflag _0.abbie.read.BABA 1
+setflag _0.abbie.done 1
+function lobby_timer_set_interrupt 0
+function lobby_tick_time
+end_transition perlin
+sequence id "sqcs_0_abbiehug" script "sequence/0/abbiehug"

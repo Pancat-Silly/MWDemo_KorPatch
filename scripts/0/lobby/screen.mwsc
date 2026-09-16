@@ -1,0 +1,63 @@
+char pandora p left
+char smalls s right
+s
+line "화면에 시계가 있네."
+p
+line "화면에 시계라..."
+line "..."
+face p 1 2
+p
+line "우리 다 휴대폰 가지고 있잖아,|p| 저게 존재하는 이유가 뭐야?"
+face s 2 0
+checkflag nickname_panda 1
+goto marker branch26y
+goto marker branch26n
+
+marker branch26y
+
+s
+line "너무 단순하게 생각하는 거 아니야,|p| 판다?"
+goto marker branch26e
+
+marker branch26n
+
+s
+line "너무 단순하게 생각하는 거 아니야,|p| 판도라?"
+
+goto marker branch26e
+
+marker branch26e
+
+face s 1 0
+s
+line "그냥 장식이라고 생각해 봐."
+line "웅장함을 부각시켜 주는 장식."
+face s 0 2
+s
+line "우리가 어디 있어?|p|\n 마인드스케이프 타워에 있잖아!"
+line "1000만 달러가 걸린 토너먼트가 진행되는 거대한 방 안에 있고!"
+face p 0 0
+p
+line "...그리고 여기저기에\n 뿔 장식이 있지.|p|\n마인드스케이프하고 뿔하고\n 무슨 관련이 있는 거야?"
+face s 1 0
+s
+line "브랜딩 중 하나겠지,|p| 뻔하잖아 뭐."
+face s 0 0
+s
+line "뿔도 웅장함을 부각시켜 주는 장식 중에 하나라고 볼 수 있잖아."
+line "우리 이런 얘기만 해도\n 하루 종일 할 수 있을걸?"
+face p 1 0
+p
+line "사양할래."
+face s 0 2
+s
+line "패배를 인정하는군. 알겠어."
+line "다음부터는 단어 선택을\n 신중히 할 것."
+p
+line "야...|p| 너 지금 이상한거 알아..?"
+line "홍보맨처럼 그만 굴어.|p| 그리고-"
+face p 0 3
+p
+line "...시계 얘기하다 대화가\n 어디까지 가는 거냐.."
+setflag _0.screen.done 1
+function lobby_tick_time 0.5

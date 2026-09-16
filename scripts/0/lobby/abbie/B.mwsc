@@ -1,0 +1,86 @@
+face p 0 2
+p
+line "좋아,|p| 대체 왜 너는\n 파자마를 입고 온 거야?"
+face p 1 0
+p
+line "너한테 무례하려고\n 물어보는 게 아니라,"
+line "여기서는 내가 좀 더 편한 복장을 입었어야 했는지 몰라서\n 물어보는 거야.."
+face a 0 0
+a
+line "앗,|p| 지금 너가 입고 있는 것도 충분히 멋져 보여!"
+face a 1 0
+a
+line "나는, 음...|p| 원래 입고 싶었던 옷이 있었는데,|p| 다 준비를 못 해서 그냥 이거라도 입고 온 거야.."
+face s 0 0
+s
+line "입고 싶었던 옷이 있었어?"
+a
+line "응!|p| 마법 소녀 같이 꾸미고 올 예정이었어."
+face a 1 2
+a
+line "우리 아빠도 도와줄 예정이었는데,|p| 요즘 일하시느라 바쁘시다 하셔서..."
+face p 0 2
+p
+line "그래서...|p| 남은 선택지는 파자마밖에 없었던 거야?"
+face a 0 0
+a
+line "..."
+face a 1 0
+a
+line "앗!|p| 전혀 아니지!|p| 헤헤.."
+line "우리 아빠는 그냥 오늘 밤에 날 여기로 데려다 주시기로 하신 분인데,|p| 일 때문에 바쁘셔서."
+face a 2 2
+a
+line "...그리고 우리 엄마는 난 마인드웨이브를 완전 못한다면서"
+line "여기로 안 데려다\n 주신다고 하시더라."
+face s 2 0
+s
+line "그것 좀 유감이네.|p|"
+face s 0 1
+s
+line "이 토너먼트에서 이기든 지든 참여하는 것만으로도 엄청난 경험을 해보는 건데."
+face a 0 0
+a
+line "내가 하고 싶었던 말이\n 바로 그거야!"
+face s 0 0
+a
+line "욕만 빼면."
+face p 1 2
+p
+line "|style color gray|(대체 어느 단어가\n 욕이라 생각한 거지???)"
+face a 2 2
+a
+line "나는 이 티켓을 찾았고!|p|\n 이 말은 즉,|p|\n 여기에 있을 자격이 있다는 거잖아!"
+face a 0 0
+a
+line "그래서...|p| 난 그냥 오늘 밤에 일찍 자는 척하면서, 몰래 빠져나왔어!"
+line "이게 내가 파자마를 입고 있는 이유이기도 하고."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.abbie.read.B 1
+setflag _0.abbie.branch B
+function lobby_tick_time
+goto script 0/lobby/abbie/questions

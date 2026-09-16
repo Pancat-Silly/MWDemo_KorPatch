@@ -1,0 +1,37 @@
+wait for marker line1
+pause
+speaker_voice announcer
+|style font fnt_pixel|참가자 여러분들에게 안내 말씀 드립니다!
+resume
+pause at marker panEnd
+|style font fnt_pixel|본 마인드웨이브 대회에서는 여러분처럼 운이 좋은\n 수백 명의 사람들이 함께하는 대회입니다!
+no_text_continue_until marker panEnd
+|style font fnt_pixel|그러니 질서 있게 줄을 서서 인내심을 가지고 기다려 주세요!
+resume
+clear
+pause at marker spaceout_effect
+wait for marker line4
+|style font fnt_pixel|플래티넘 티켓을 잘 소지하고 있는지 확인해 주시고,\n 새치기를 하지 말아주세요!
+wait for marker spaceout_effect
+|style font fnt_pixel|터미널을 이용할 당신의 차례가 오면,\n 신분 확인 절차가 있을 것입니다...
+speaker_voice normal
+...
+......
+저기... 앞으로..
+...
+text_wavy 0 0
+resume
+clear
+no_text_continue_until marker startleEnd
+pause at marker startleEnd
+저기요
+당신 차례예요.|p| 앞으로 가주실 수 있으신가요?
+clear
+resume
+wait for marker terminalDialogue
+pause
+speaker_voice terminal
+|style font fnt_pixel|마인드스케이프 타워 토너먼트 참가 시스템에 오신 걸 환영합니다!
+|style font fnt_pixel|시작하려면 터미널 앞으로 와주세요!
+resume
+

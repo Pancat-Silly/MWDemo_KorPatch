@@ -1,0 +1,79 @@
+face p 1 0
+face s 0 0
+p
+line "음,|p| 스몰스,|p| 곧 있으면 토너먼트 시작 것 같은데,|p| 우리 먼저 가봐야 하는 거 아니야?"
+face s 2 0
+s
+line "그렇게 빨리 시작할 것 같지는 않은데?"
+face s 0 2
+s
+line "근데 토너먼트 시작한다고 갑자기 흩어지는 것보단,|p| 지금 작별인사 하는것도 나쁘진 않아 보이네."
+face a 1 2
+a
+line "우음,|p| 그래 뭐..."
+face a 0 0
+a
+line "...만나서 즐거웠어 얘들아.|p|\n나중에 다시 만나!"
+line "잠깐,|p| 혹시 너 전화번호 좀 받을 수 있을까?"
+face s 0 1
+s
+line "그러지 뭐,|p| 자 여기."
+line "내가 판다 전화번호도 대신해서 줄게."
+face p 1 2
+p
+line "왜 나보고 판다라 하냐?"
+s
+line "좋은 별명인데 뭐."
+a
+line "맞아!|p| 너는 어떻게 생각해 판다?"
+face p 4 0
+p
+line "..."
+face p 1 0
+p
+line "너네 맘대로 해라."
+line "나 먼저 갈게,|p| 스몰스,|p| 원하면 나 따라와도 되고."
+face p 0 1
+p
+line "안녕."
+set p front_when_speak 0
+set p x -200
+wait 1 second
+a
+line "잘가!"
+face s 2 1
+s
+line "야, 원래 우리 둘이 같이 다녀야 하는거 아니야?"
+face s 0 1
+s
+line "미안 애비,|p| 나는 쟤랑 같이 가봐야 할 것 같아,|p| 나중에 보자."
+face a 1 0
+a
+line "나중에 보자아!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.smalls.abbie 1
+setflag _0.abbie.read.ABBA 1
+setflag _0.abbie.done 1

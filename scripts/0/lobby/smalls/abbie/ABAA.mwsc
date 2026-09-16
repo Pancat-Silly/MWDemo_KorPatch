@@ -1,0 +1,54 @@
+face p 0 0
+p
+line "애비는 좀..|p| 흥미로웠어."
+face s 1 0
+s
+line "..."
+face p 4 0
+p
+line "어,|p| 스몰스 괜찮아?"
+s
+line "응,|p| 생각을 좀 해 봤어."
+line "만약에 내가 여기서 이기면,|p| 그 돈으로 인형 사업 같은 걸 해 볼까 해서."
+face p 0 2
+p
+line "인형 사업이라.."
+face s 0 1
+s
+line "응.|p| 주문 제작을 받는 거지."
+line "일단 애비를 직원으로 고용해.|p|\n뭐든 만들 수 있잖아?"
+line "사람들하고 대화도 잘 할 수 있는 것 같고."
+p
+line "그럼 너는 뭐 할 건데?"
+face s 0 0
+s
+line "사장 같은 거 해야지 뭐."
+face p 1 2
+p
+line "그거 좀..|p| 나쁜 생각인 것 같은데."
+line "너 사업 관련 경험이 하나도 없잖아."
+face s 0 1
+s
+line "그럼 내가 홍보를 하지."
+p
+line "만약에 잘된다 하더라도,|p| 애비가 엄청 바빠질 것 같은데?"
+face p 4 0
+p
+line "..."
+face p 0 0
+p
+line "애비 혼자 일하기 버거우니깐 나라도 고용해 봐라."
+s
+line "그러면 되겠네."
+face s 0 1
+s
+line "그럼 너는 밖에서 표지판이나 돌리는 거다?"
+
+
+
+
+
+setflag _0.smalls.abbie 2
+setflag _0.smalls.abbie.branch ABAA
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return

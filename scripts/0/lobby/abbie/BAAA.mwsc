@@ -1,0 +1,85 @@
+face a 0 0
+face s 0 0
+face p 0 0
+a
+line "판도라,|p| 스몰스,|p| 너네랑 얘기하는게 저엉말 재미있었어!"
+face a 2 2
+a
+line "근데 조금 있으면 우리가 헤어져야 할지도 몰라..."
+face a 1 2
+a
+line "...그래서 그런데,|p| 혹시 너 전화번호 좀 알 수 있을까?"
+face s 0 1
+s
+line "당연하지.|p| 자, 여기."
+line "언제든지 연락해도 좋아.|p| 이스트 블랙아웃으로 와주면 놀 수도 있고."
+face p 1 0
+p
+line "아니면 우리가 그쪽으로 갈 수도 있고..."
+face a 4 0
+a
+line "설마 날 위해서 그러는거야???"
+face p 0 1
+p
+line "응 근데 우리는 그냥-"
+face p 0 0
+p
+line "지하철로 여행하는 법을 알려주기만 할 수도 있어."
+face p 0 2
+p
+line "다른 놀곳은 나한텐 너무 비싸."
+face a 0 0
+a
+line "괜찮아!|p| 내가 너네 둘을 위해서 돈을 쓸 수도 있어!"
+face p 4 0
+p
+line "오우,|p| 좋아 그럼."
+a
+line "가기전에,|p| 잠깐!"
+face p 0 0
+p
+line "무슨 일이ㅇ-|skip| "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.smalls.abbie 1
+setflag _0.abbie.read.BAAA 1
+setflag _0.abbie.done 1
+end_transition perlin
+function lobby_timer_set_interrupt 0
+function lobby_tick_time
+sequence id "sqcs_0_abbiehug" script "sequence/0/abbiehug"

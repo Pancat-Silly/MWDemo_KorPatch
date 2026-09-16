@@ -1,0 +1,70 @@
+face s 0 0
+s
+line "그럼 너 본명이 이싼인 거야?"
+face l 0 0
+l
+line "그치.|p| 내 친구들은 그렇게 불러."
+face k 0 1
+k
+line "\"친구\" 아니고?"
+face l 1 0
+l
+line "뭐라는 거야.|p| 너희 할아버지 할머니도 나 이싼이라 부르시잖아."
+line "그분들도 내 친구거든."
+face s 1 0
+s
+line "너희 서로 남매 사이가 아니었어?"
+k
+line "이싼이 맨날 우리 집에나 놀러 오는 골칫덩이긴 한데..."
+face k 0 2
+k
+line "...그렇다고 혈연은 아니지,|p| 응."
+face l 0 0
+l
+line "우리 집은 형제들이 있으면 너무 시끄러워져서."
+line "게다가,|p| 내가 비탄의 요새 얘기하는 거 듣고 싶어 하는 사람도 없고."
+face s 0 0
+l
+line "우리 가족이 좋긴 좋은데,|p| 그 사람들이랑 떨어져 있자니 천국 같다니까."
+face l 1 0
+l
+line "캣 조부모님이 훨씬 멋지시거든."
+face k 0 0
+k
+line "이싼한테는 따분한 노인네들 집이 천국인가 봐."
+face l 0 0
+l
+line "세상 평온하지,|p| 공짜로 쿠키도 얻어먹지,|p| 거기다 어르신 둘이랑 놀 수도 있는데 그게 천국이지 뭐냐."
+face p 0 0
+p
+line "너...|p| 설마 그분들한테도 만화 얘기하는 거야?"
+l
+line "그럼.|p| 캣 할부지랑 수다 떨다 보면 몇 시간은 금방이라니까."
+face k 0 1
+k
+line "참고로 네 말 한 마디도 못 알아듣거든."
+face l 1 0
+l
+line "했던 말 좀 반복하면 뭐 어때.|p| 더 대화할 수 있으면 좋은 거지."
+face l 0 0
+l
+line "그분도 나한테 이야기 들려주는 걸 엄청 좋아하셔."
+face k 0 0
+k
+line "늙은이 이야기들이잖아.|p| 인생 이야기 같은 거."
+face l 1 0
+l
+line "그럼.|p| 완전 수다쟁이시지."
+face l 1 0
+l
+line "같은 이야기를 몇 번이고 반복하셔도 그분 눈빛에 생기가 도는 모습이 보기 좋더라."
+face k 0 1
+k
+line "..."
+face l 0 0
+l
+line "마음 같아선 언제나 거기서 놀겠지만,|p| 내가 그분들 소파에서 자기엔 키가 너무 큰지라."
+setflag _0.slate_kat.read.AB 1
+setflag _0.slate_kat.branch AB
+function lobby_tick_time 2
+goto script 0/lobby/slate_kat/questions

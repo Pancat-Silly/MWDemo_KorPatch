@@ -1,0 +1,57 @@
+face s 0 0
+face p 1 0
+p
+line "여기 있는 사람들 생각을 하자니 뭔가... 묘하네."
+line "뭐랄까, 우리 모두 사실상 로또급 확률을 뚫고 이곳에 들어온 건데..."
+face p 1 2
+p
+line "...이 어마어마한 인파 속에서 우승자는 단 한 명이라니."
+face s 1 0
+s
+line "그치,|p| 여기 있는 사람들 전부 짐 싸서 다시 집에나 가는 게 좋을걸."
+face s 0 1
+s
+line "어차피 우승은 내 몫이니까."
+l
+line "나랑 캣이 여기 들어온 게 얼마나 운이 좋은 건지도 실감이 잘 안 나더라."
+face p 1 0
+k
+line "너희 둘도 같은 기분이겠지."
+face s 2 1
+s
+line "그럼,|p| 우리 넷 다 축복받은 거라니까."
+face l 1 0
+l
+line "우리 티켓은 둘 다 캣이 찾아냈어."
+face s 0 0
+face l 0 0
+l
+line "그러니까 축복받은 건 얘지."
+k
+line "첫 번째 티켓은 이싼 줬어.|p| 모르는 사람들이 내 머릿속을 들여다보는 게 싫었거든."
+face l 1 0
+l
+line "올해 최고의 생일 선물이었다니까."
+face k 0 1
+k
+line "내가 살면서 생일 선물로 뭘 받은 게 지금까지 전혀 없었잖아."
+face s 0 1
+s
+line "늦었지만 생일 축하해."
+face k 0 0
+k
+line "아무튼,|p| 내가 두 번째 티켓을 찾았을 땐 아무리 하기 싫었어도 두 번씩이나 기회를 떠넘기는 건 아니다 싶었지."
+l
+line "안 그래 줘서 고맙다.|p| 나랑 같이 안 와줬으면 지금 죽도록 따분했을 텐데."
+face l 0 0
+l
+line "집에 있는 것보다야 낫겠지만."
+k
+line "내가 운 좋으니까 운 좋은 줄 알아."
+face k 0 1
+k
+line "말아먹지나 말고."
+setflag _0.slate_kat.read.B 1
+setflag _0.slate_kat.branch B
+function lobby_tick_time
+goto script 0/lobby/slate_kat/questions

@@ -1,0 +1,57 @@
+char pandora p left
+char smalls s right
+face p 3 0
+p
+line "...스몰스!?"
+face s 0 2
+s
+line "어이."
+face p 0 2
+p
+line "너는 티켓이 없었던 걸로 기억하는데?"
+face s 1 0
+s
+line "응,|p| 없었지 뭐."
+p
+line "그럼 여기 어떻게 들어온 거야?"
+face s 0 1
+s
+line "비즈니스 비밀."
+face p 1 2
+p
+line "뭐 했는데...?"
+face s 2 0
+s
+line "보안이 진짜 허술했어."
+face s 2 1
+s
+line "존재하지도 않았던 것 같아."
+face p 0 2
+p
+line "야.."
+face s 0 0
+s
+line "그냥 좀..|p| 뒷문으로 들어와서,"
+line "복도를 돌아다니다가 사람들로 가득 찬 이 거대한 방을 찾았어."
+face p 0 0
+p
+line "어쨌든,|p| 널 여기서 보다니 반갑다."
+face p 0 1
+p
+line "네가 있어서 훨씬 덜\n 귀찮아질지도 몰라."
+face p 1 0
+p
+line "경비가 갑자기 찾아와서 널 추방하지 않기를 빌어야지 뭐."
+face s 0 1
+s
+line "한 번 기대해 볼게."
+face p 0 2
+p
+line "그래도 만약 경비가 너 보고 누구냐고 나한테 물으면,|p| 너랑은 아무런 관련 없다고 말할 거야."
+face s 0 0
+s
+line "그럴 수 있지."
+face p 0 1
+p
+line "근데 야,|p| 진짜로-"
+skip outro

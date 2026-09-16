@@ -1,0 +1,56 @@
+face s 0 0
+s
+line "너 좀 불안해 보이는데,"
+face s 0 1
+s
+line "뭐 걱정되는 거라도 있는 거야?"
+face p 1 2
+p
+line "응...|p| 대회가 시작되기도 전에 록시랑 얘기하고 나니깐 내가 얼마나 가망이 없는지 깨달아서 그래."
+face p 0 2
+p
+line "나보다 잘하는 사람들이 엄청 많을 거 아니야."
+s
+line "긴장 좀 풀어봐."
+face s 1 0
+s
+line "이 토너먼트는 매년마다 열리잖아."
+line "지금까지 우승한 사람들도 그렇게 유명하지도 않은 사람들이고."
+face p 1 0
+p
+line "그치,|p| 너 말대로 여기엔 은둔 고수들도 있겠다."
+face p 0 2
+p
+line "하...|p| 더 불안해지는데..."
+face s 0 0
+s
+line "그런 뜻으로 말한 게 아닌데."
+line "내 생각엔 록시가 마인드웨이브에만 집중한 것도 어떻게 보면 큰 허들이 될 수 있을 것 같은데?"
+face s 1 0
+s
+line "걔는 자기처럼 게임에 인생 건 애들이랑만 주로 붙어 봤으니까."
+face s 2 0
+s
+line "너처럼 초보인 사람들하고 붙었을 때는 제 실력을 뽐낼 수 없을지도 몰라."
+face s 0 2
+s
+line "다르게 말하자면,|p| 너가 은둔 고수일 수도 있는 거지."
+face p 1 2
+p
+line "머리만 안 아팠으면 제대로 뭘 하든가 하는데,|p| 어휴."
+face s 0 0
+s
+line "오우, 음,|p| 그냥 위로해 주려는 말이었어."
+face s 0 3
+s
+line "사실 어떻게 보면,|p| 지금 가장 걱정해야 할 사람은 나인 것 같은데."
+face s 0 1
+s
+line "너는 적어도 몰래 들어오지는 않았잖아."
+
+
+
+setflag _0.smalls.roxy 2
+setflag _0.smalls.roxy.branch AAAA
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return

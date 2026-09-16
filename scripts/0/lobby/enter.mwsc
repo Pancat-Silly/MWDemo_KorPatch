@@ -1,0 +1,47 @@
+char pandora p left
+char smalls s right
+face s 1 0
+s
+line "다음 라운드까지 시간이\n 조금 있는데,"
+face s 0 1
+s
+line "돌아다니면서 사람들을 좀\n 만나 보는 거 어때?"
+face p 1 2
+p
+line "아니, 괜찮아.|p| 나는 여기\n 게임하러 온 거거든?"
+line "그냥 다음 라운드가\n 시작될 때까지 기다릴래."
+face s 1 0
+s
+line "야,|p| 전략적으로 좀 생각을 해 봐라."
+line "마인드웨이브는 사람 특성을 가지고 하는 게임이잖아."
+s
+line "돌아다니면서 사람들하고\n 대화를 좀 해 봐!"
+face s 0 1
+s
+line "사람들이 어떤 성격을\n 가지고 있는지 아는 것도\n 도움이 될 거야."
+face p 1 0
+p
+line "으,|p| 굳이 날 끌고 다니겠다면,|p| 따라가지 뭐."
+face p 1 2
+p
+line "굳이 이렇게 할 필요는\n 없는 것 같은데.."
+s
+line "잘 생각했어!|p| 그럼 어디 한번..."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.smalls.q1 1
+setflag _0.smalls.q2 1
+
+setflag _0.lobby_intro 1

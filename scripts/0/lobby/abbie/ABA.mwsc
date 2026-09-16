@@ -1,0 +1,78 @@
+face s 0 1
+face p 0 0
+s
+line "그나저나,|p| 너가 들고있는건 뭐야?"
+face a 6 2
+a
+line "앗,|p| 토미 말이야?|p| 이거 내가 만든 거야!"
+s
+line "귀엽게 잘 만들었네."
+face a 6 0
+a
+line "고마워어!|p| 내가 만든 다른 귀여운 인형들도 더 있어!"
+face s 0 0
+face a 6 2
+a
+line "내가 만든 인형들은 다 소중한데,|p| 이 토미는 그중에서 완전 특별한 존재야!"
+face a 6 1
+a
+line "내가 얘를 첫 번째로 만들었었거든."
+face p 0 1
+p
+line "맏이 편향이군."
+face a 6 3
+a
+line "헤헤,|p| 그럴 수도 있겠다."
+face a 0 0
+a
+line "나는 얘하고 같이 샤워도 할 만큼 친한 사이야!"
+face p 1 1
+p
+line "으,|p| 나는 바느질 싫어하는데."
+a
+line "왜?"
+face p 0 0
+p
+line "지난번에 했을땐,|p| 손가락을 찔러서 피를 봤었거든."
+face s 0 1
+s
+line "너네...|p| 둘다...|p| 바느질 해봤어?"
+face p 1 0
+p
+line "응,|p| 난 우리 아빠를 위해서 특별한걸 만들어주려 했는데,|p|\n잘 안됐지 뭐."
+face a 1 0
+a
+line "처음엔 무서울 수 있지!|p| 근데 끝까지 할 가치가 있어!"
+face a 1 2
+a
+line "만들때 드는 재료 비용이 많이 들고,|p| 시간이 많이 들어도..."
+
+face a 2 2
+a
+line "...그리고,|p| 내 손이 상처 투성이가 되어도.."
+face p 4 0
+p
+line "그렇게 말하니깐 못 들어주겠다,|p| 미안."
+face p 0 1
+p
+line "그래도 너 뜨개질은 완전 잘해보여."
+face a 3 1
+a
+line "고마워어!!"
+face a 4 1
+a
+line "그 말 지인짜 감동이다!"
+face a 0 0
+a
+line "그리구 판다,|p| 만약에 뜨개질을 다시 해보고싶은 날이 생기면,|p| 나한테 먼저 말해줘봐!"
+line "뜨개질은 친구랑 같이 하면서 배우는게 엄청 도움 되거든."
+face p 0 1
+p
+line "응,|p| 알겠어... "
+face p 1 1
+p
+line "올 때 우리 둘 다 충분히 쓰고도 남을 반창고도 챙겨와야 된다?"
+setflag _0.abbie.read.ABA 1
+setflag _0.abbie.branch ABA
+function lobby_tick_time
+goto script 0/lobby/abbie/questions

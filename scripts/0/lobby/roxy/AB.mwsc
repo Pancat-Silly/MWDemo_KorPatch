@@ -1,0 +1,87 @@
+face p 0 0
+face s 0 0
+checkflag nickname_panda 1
+goto marker branch26y
+goto marker branch26n
+
+marker branch26y
+
+s
+line "부작용은 둘째치고,|p| 판다한테 해줄 조언이라도 있어? "
+
+goto marker branch26e
+
+marker branch26n
+
+s
+line "부작용은 둘째치고,|p| 판도라한테 해줄 조언이라도 있어? "
+
+goto marker branch26e
+
+marker branch26e
+
+face p 1 2
+p
+line "너 정말 만약에 마인드웨이브가 네 뇌를 썩히거나 이상한 짓을 저지른다고 해도,|p| 계속 할 거야?"
+face s 2 1
+s
+line "나는 지금까지 멀쩡하잖아.|p| 그렇게 까지 큰 문제는 아닌 것 같은데?"
+face p 0 4
+p
+line "와... 너 진짜 이해가 안 가네."
+face s 0 1
+s
+line "너는 마인드웨이브에 대해서도 이해 못 하잖아."
+line "그러니까 지금 받을 수 있는 조언이나 도움은 다 받아야지."
+face r 2 0
+r
+line "사실 마인드웨이브는 직감적인 문제야."
+line "마인드웨이브가 뇌랑 어떻게 소통되는지는 사람마다 다 다르게 느끼거든."
+face r 3 0
+r
+line "그러니까 그걸 먼저 이해해 봐."
+face p 0 0
+p
+line "좋아,|p| 알겠어.|p| 그럼 나는 내 방식대로 이해하려면 어떻게 해야 해?"
+face r 2 0
+r
+line "그거는 내가 말로 설명한다고 되는 문제가 아니야."
+line "너가 직접 해 봐야지."
+face p 4 0
+face s 0 0
+s
+line "아,|p| 난 쟤가 하는 말 이해된다."
+line "니가 하는 생각들이 액체라고 하면,"
+line "너가 얼마나 생각하는지에 따라서 그 액체가 가벼워 질 수도 있고 반대로 끈적해 질 수도 있는 거잖아."
+face r 3 0
+r
+line "그게 무슨 소리니."
+face p 4 0
+p
+line "그러니까,|p| 뇌에서 나오는 이상한 액체 말하는 거야?"
+face s 2 0
+s
+line "아니다,|p| 그냥 무시해."
+r
+line "전두엽 피질 운동만큼은 도움이 될걸?"
+face s 0 0
+face p 0 0
+p
+line "그게 마인드웨이브랑 무슨 상관이 있니."
+r
+line "기억을 불러오는 데 필수적인 운동이야."
+p
+line "..."
+r
+line "아 미안,|p| 나는 원래 마인드웨이브를 해본 사람들 하고만 이야기해서."
+face p 1 0
+p
+line "와,|p| 너무하네."
+face r 0 0
+r
+line "거짓말 아니야."
+line "마인드웨이브에 대해서 기본적인 개념조차 없으면 내가 해줄 조언도 별로 없거든."
+setflag _0.roxy.read.AB 1
+setflag _0.roxy.branch AB
+function lobby_tick_time
+goto script 0/lobby/roxy/questions

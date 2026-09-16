@@ -1,0 +1,66 @@
+char pandora p left
+char smalls s right
+
+
+
+checkflag _0.pandora.alone 1
+goto marker alone
+
+
+s
+allow_player_input 0
+function lobby_bgm_gain 0
+function sfx_play snd_lobby_notification
+
+
+
+s
+line "|p 30| |skip| "
+face s 1 0
+
+s
+line "|p 30| |skip| "
+allow_player_input 1
+s
+line "음,|p| 내 생각엔 지금 시작하는 것 같은데."
+face p 0 0
+p
+line "드디어."
+checkflag _0.slate_kat.odd 1
+goto marker 10y
+goto marker 10n
+marker 10n
+goto marker end
+marker 10y
+face p 0 1
+p
+line "너희 둘, 행운을 빌어."
+goto marker end
+
+
+marker alone
+p
+allow_player_input 0
+function lobby_bgm_gain 0
+function sfx_play snd_lobby_notification
+
+p
+line "|p 30| |skip| "
+face p 1 0
+
+p
+line "|p 30| |skip| "
+allow_player_input 1
+p
+line "오,|p| 지금 시작하는 건가?"
+face p 0 0
+p
+line "난 스몰스한테 돌아갈게."
+goto marker end
+
+
+
+
+marker end
+skip outro
+function start_next_round

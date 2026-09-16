@@ -1,0 +1,22 @@
+checkflag _0.tutorial.fails 0
+goto marker 0fails
+
+goto marker 1fails
+
+
+
+
+marker 0fails
+와 정말 흥미로운 정신을 가지고 있네?|p| 헤헤..
+show_controls
+이제 방향키 인터페이스 차례야!
+키보드에 손을 올려놓고,|p| 오른쪽에 있는 상하좌우 키로 움직이면 돼.|p| 왼쪽에 있는 WASD 키를 사용해도 되고.
+goto marker end
+
+marker 1fails
+앗,|p| 안타깝다...
+show_controls
+방향키나 WASD를 사용할 수 있다는 걸 기억해!|p| 둘 중 가장 편한 곳을 쓰면 더 좋겠지?
+goto marker end
+
+marker end

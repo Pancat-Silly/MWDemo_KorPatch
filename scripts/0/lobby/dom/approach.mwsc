@@ -1,0 +1,19 @@
+
+face p 0 1
+p
+line "요."
+face p 0 0
+p
+line "아직 대화할 시간이\n 조금 남은 것 같은데?"
+face d 0 0
+d
+line "나이스!"
+
+
+
+
+
+
+goto script 0/lobby/dom/questions
+
+

@@ -1,0 +1,72 @@
+face s 0 0
+face p 0 0
+s
+line "너희 만약 우승하면 상금으로는 뭐 할 거야?"
+face l 0 0
+l
+line "이야,|p| 그 생각은 거의 안 해봤는데.|p| 달달한 계획은 캣한테 있거든."
+face l 1 0
+l
+line "얘가 뭐 하고 싶다 했냐면-|p 20| |skip| "
+face k 0 1
+k
+line "이싼,|p| 네가 말할 바에는 차라리 내가 할게."
+face k 0 0
+k
+line "어차피 제대로 말 못 할 거잖아."
+face l 1 0
+l
+line "그래 그래,|p| 너 실컷 말해라."
+k
+line "내 상금으론 그냥 내가 쓸 미술 스튜디오 좀 빌리고 싶어."
+face s 0 0
+s
+line "와 멋있다,|p| 너 뭐 그리는데?"
+k
+line "그냥 취미긴 한데,|p| 내가 추상화 그리기를 좋아하거든."
+face l 0 0
+face k 0 1
+l
+line "지금 당장은 얘 엄마가 쓰던 빈 방에서 그리고 있어."
+face k 0 0
+k
+line "어,|p| 그치.|p| 그냥 나만의 공간이 있으면 좋을 것 같아서."
+face s 0 0
+s
+line "그 마음 알지."
+face s 0 1
+checkflag nickname_panda 1
+goto marker branch26y
+goto marker branch26n
+
+marker branch26y
+
+s
+line "판다,|p| 우리도 돈 좀 모아서 스튜디오 하나 구해보자."
+goto marker branch26e
+
+marker branch26n
+
+s
+line "판도라,|p| 우리도 돈 좀 모아서 스튜디오 하나 구해보자."
+goto marker branch26e
+
+marker branch26e
+
+face p 4 0
+p
+line "으으,|p| 이 도시에서 빌리는 거 막,|p| 엄청 부담되지 않아?"
+s
+line "이웃집에서 시끄럽다고 민원 날아오는 것보다 나을 것 같은데."
+face l 0 0
+l
+line "너희 둘 밴드라도 하는 거야?|p| 진짜 쩐다."
+line "소음 민원은 우리 집에도 많이 들어와."
+line "우리 엄빠가 늘 형들한테 사고 친다고 소리 지르느라..."
+line "난 최대한 안 엮이려 해."
+line "캣이 우승하면,|p| 맨날 얘 스튜디오 가서 같이 놀아야지."
+
+setflag _0.slate_kat.read.BA 1
+setflag _0.slate_kat.branch BA
+function lobby_tick_time
+goto script 0/lobby/slate_kat/questions

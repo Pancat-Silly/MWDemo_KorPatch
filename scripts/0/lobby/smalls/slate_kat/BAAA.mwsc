@@ -1,0 +1,48 @@
+face p 0 1
+face p 0 1
+p
+line "캣 꽤 멋있네."
+face p 0 0
+p
+line "워낙 지저분하지만 않았으면,|p| 나도 재미로 그림 잔뜩 그려보는 건데."
+face s 0 1
+s
+line "음악도 음악만의 추상성이 있지."
+face s 0 0
+s
+line "지저분하기도 훨씬 덜하고."
+p
+line "가끔은 아무렇게나 치는 것도 재밌지만..."
+line "...난 좀 음악다운 음악이 나올 때가 좋더라."
+face s 0 1
+s
+line "그치."
+face p 1 0
+p
+line "그래도 걔 상대하기엔 꽤 벅차겠던데..."
+face p 1 2
+p
+line "정신이 진짜 말만큼 몽롱하면,|p| 나 또 토할 것 같은데."
+face s 1 0
+s
+line "캣이랑 붙는 게 그리 걱정할 일은 아닌 것 같은데."
+face p 0 2
+p
+line "그거 알아?|p| 경험 차이는 빼고 보더라도,|p| 걘 나보다 운까지 좋잖아."
+face p 0 0
+p
+line "티켓을 두 장 찾았으면 사실상 로또에 두 번 당첨된 건데."
+s
+line "걱정할 필요 없다는 이유가 바로 그거라니까."
+face s 2 1
+s
+line "그 운도 언젠가는 바닥나겠지."
+face p 1 0
+p
+line "그게 무슨 논리야."
+
+
+setflag _0.smalls.slate_kat 2
+setflag _0.smalls.slate_kat.branch BAAA
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return

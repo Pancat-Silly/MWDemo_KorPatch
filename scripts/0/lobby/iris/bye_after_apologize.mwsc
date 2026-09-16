@@ -1,0 +1,16 @@
+face p 1 2
+p
+line "음,|p| 그래,|p| 이게 내가 말하고 싶었던 것들이야."
+face p 0 0
+p
+line "그럼 이제 그만 가 볼게,|p| 내 친구가 저기서 기다리고 있어서."
+face i 0 0
+i
+line "그래,|p| 난 괜찮아."
+face p 0 4
+p
+line "그럼,|p| 나중에 보자, 아마도."
+i
+line "잘 가."
+setflag _0.pandora.alone 0
+

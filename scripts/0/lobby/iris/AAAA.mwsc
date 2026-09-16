@@ -1,0 +1,38 @@
+face p 4 0
+p
+line "그래,|p| 음,"
+face p 1 0
+p
+line "이제 더 이상 할 얘기가 생각나지 않네."
+face p 0 4
+p
+line "그럼 이만 가보도록 할게."
+face i 1 0
+i
+line "그래."
+face p 0 1
+p
+line "나중에 보자?"
+face i 0 3
+i
+line "아마도."
+face p 0 2
+p
+line "..."
+set s x -70
+set p x +45
+face s 0 3
+s
+line "어땠어?"
+p
+line "그게-"
+face p 1 2
+p
+line "잘 모르겠다."
+setflag _0.smalls.iris 1
+setflag _0.iris.done 1
+setflag _0.pandora.alone 0
+setflag _0.iris.read.AAAA 1
+
+function lobby_tick_time
+

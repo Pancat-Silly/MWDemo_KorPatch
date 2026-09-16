@@ -1,0 +1,27 @@
+char pandora p left
+char smalls s right
+
+p
+line "이 튜브들..."
+face p 0 2
+p
+line "...좀 무섭다..?"
+face s 1 0
+s
+line "안에 뭐가 있는지 궁금한 거야?"
+face p 0 0
+p
+line "보나 마나 저 안엔,|p|\n 전선 같은 게 있겠지 뭐."
+line "그냥,|p| 왜 저렇게 거대해야 하는지 궁금해.|p| 그리고 이게 왜 우리 눈앞에 있는지도 궁금하고."
+face s 0 0
+s
+line "우리 눈앞에 있다고는\n 동감 못하겠는데?"
+line "한 30미터 정도는\n 높이 있는 걸로 보여."
+face p 0 1
+p
+line "닥쳐.|p| 내가 하고 싶은 말이\n 뭔지 알면서..."
+face s 2 1
+s
+line "..."
+setflag _0.ceiling.done 1
+function lobby_tick_time 0.5

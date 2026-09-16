@@ -1,0 +1,68 @@
+face s 2 1
+s
+line "애비,|p| 나랑 판다는 마저 가던 길 가봐야 할 것 같아."
+face p 1 2
+face s 0 1
+p
+line "너 나보고 \"그딴 식\"으로 계속 부를 생각인 거면 반갈죽 해버린다."
+face a 2 2
+a
+line "..."
+face p 1 0
+p
+line "음,|p| 너는 계속 그렇게 불러도 괜찮아."
+face a 4 1
+a
+line "..."
+face p 0 0
+p
+line "토너먼트뿐만 아니라 그 외에 다른 것들에도 행운을 빌게."
+face a 1 0
+a
+line "앗!|p| 혹시 번호 좀 알려줄 수 있어?"
+face a 0 0
+a
+line "혹시라도,|p| 너희 중 한 명이 바로 탈락하면, 다시는 못 볼 수도 있으니까."
+face p 1 0
+p
+line "너도...|p| 예외는 아닌 것 같은데."
+s
+line "여기 내 번호야. 판도라 것도"
+face a 3 1
+a
+line "고마워!"
+face p 0 2
+p
+line "야,|p| 내 허락도 없이\n 번호를 그냥 주냐?"
+face p 0 1
+p
+line "근데 뭐,|p| 가끔은 만나서\n 노는 것도 좋겠다."
+face s 2 0
+s
+line "너가 오늘 밤에 저지른 짓 때문에 또다시 외출 금지 당하지 않는다면."
+face a 1 2
+a
+line "...상금이라도 타서 집에 가면,|p|\n 덜 혼나려나?"
+face s 0 1
+s
+line "그랬으면 좋겠네."
+p
+line "나중에 봐 애비."
+face a 0 0
+a
+line "잘 가!"
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.smalls.abbie 1
+setflag _0.abbie.read.BBA 1
+setflag _0.abbie.done 1
+function lobby_tick_time

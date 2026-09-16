@@ -1,0 +1,13 @@
+face p 0 4
+p
+line "음,|p| 이제 슬슬 가봐야 할 것 같아."
+i
+line "그래?|p| 잘 가."
+
+setflag _0.pandora.alone 0
+
+
+
+
+
+

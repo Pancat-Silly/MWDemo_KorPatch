@@ -1,0 +1,12 @@
+face s 0 1
+s
+line "우리 다시 왔어."
+face r 0 0
+r
+line "..."
+face r 1 0
+r
+line "오,|p| 안녕."
+
+goto script 0/lobby/roxy/questions
+

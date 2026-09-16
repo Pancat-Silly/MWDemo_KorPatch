@@ -1,0 +1,109 @@
+face p 0 1
+p
+line "나한테 빚진 20달러 잊지 마."
+face s 2 1
+s
+line "그래 그래,|p| 내가 우승하면 첫 빠따로 준다."
+face p 0 0
+p
+line "더 많이 걸 걸 후회되네."
+face p 1 0
+p
+line "그나저나,|p| 여기 사람들이랑 얘기하고 보니까 토너먼트에 대해 이상한 느낌이 들어."
+face s 0 0
+s
+line "에이,|p| 괜찮을 거야."
+face p 0 2
+p
+line "알렉스랑 얘기하자는 말 들으니깐 이제 너 말 못 믿겠다."
+line "혼자 있으려고 조용히 있는 사람들은 당연히 우리하고 대화하기 싫겠지."
+face s 1 0
+s
+line "나는 그렇게 생각 안 하는데."
+checkflag _0.abbie.met 1
+goto marker branch7y
+goto marker branch7n
+marker branch7y
+
+
+face s 0 1
+s
+line "애비는 오히려 우리를 반겼잖아."
+line "우리 귀 떨어지게 만들 만큼 큰 문제 없었고."
+checkflag _0.abbie.done 1
+goto marker branch2y
+goto marker branch2n
+marker branch2n
+face s 2 1
+s
+line "솔직히,|p| 우리 다시 애비한테 돌아가서 말 걸어야 될 것 같아..."
+face s 0 2
+s
+line "아니면 다른 사람들 만나러 가던가."
+marker branch2y
+goto marker branch1e
+
+marker branch7n
+checkflag _0.roxy.met 1
+goto marker branch3y
+goto marker branch3n
+marker branch3y
+
+face s 0 1
+s
+line "록시는 휴대폰 보고 있었어도 친절했었잖아."
+face s 0 0
+s
+line "그럭저럭일지라도."
+goto marker branch1e
+
+marker branch3n
+checkflag _0.dom.met 1
+goto marker branch4y
+goto marker branch1e
+marker branch4y
+
+face s 0 1
+s
+line "돔은 휴대폰 보고 있었는데 우리한테 먼저 말 걸어줬잖아."
+checkflag _0.dom.read.ABAA 1
+goto marker branch5y
+goto marker branch1e
+marker branch5y
+
+face s 2 1
+s
+line "그리고 이제 같이 공연 계획할 멋진 사람도 생겼고."
+goto marker branch1e
+marker branch1e
+
+face s 0 1
+s
+line "조금 더 돌아다녀 보면 분명 대화하기 좋은 사람들을 만날 수 있을 거야."
+face s 1 0
+s
+line "이번엔 내가 사람을 잘못 짚었을 수도 있지."
+face s 0 1
+s
+line "이렇게 된 거, 어쩔 수 없는 거지 뭐,|p| 그냥 넘어가자."
+face p 0 1
+p
+line "날 계속 끌고 다니면서 사람들이랑 얘기하고 싶은 거야?"
+face p 0 0
+p
+line "얘기할 사람이 대화 하고 싶을지 아닐지 날 어떻게 설득할 건데?|p| 계속 쉬운 내기로 승부 보려고 하는 거야?"
+face s 1 0
+s
+line "음,|p| 사실 너한테 뜯긴 20달러 돌려받고 싶긴 한데..."
+face s 0 1
+s
+line "도박사의 오류에 따라서 다음번에는 내가 맞을지도 모르지."
+face s 0 2
+s
+line "다음번에 만나는 사람 가지고 더블 아니면 꽝 하는 거 어때?"
+p
+line "자꾸 그런 식으로 내기하면,|p| 나중에 상금 타도 나한테 다 줘야 할지도 몰라."
+setflag _0.smalls.alex 2
+setflag _0.smalls.iris.branch B
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return

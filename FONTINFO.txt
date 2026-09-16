@@ -1,0 +1,16 @@
+한글패치에 사용된 폰트 :
+
+Galmuri7, Galmuri11, Galmuri11Bold
+https://quiple.dev/galmuri
+
+Copyright © 2017-2024, Eunbin Jeong (Dalgona.) <project-neodgm@dalgona.dev>
+with reserved font name "Neo둥근모 Pro" and "NeoDunggeunmo Pro".
+
+-----------------------------
+Fonts used in patch :
+
+Galmuri7, Galmuri11, Galmuri11Bold
+https://quiple.dev/galmuri
+
+Copyright © 2017-2024, Eunbin Jeong (Dalgona.) <project-neodgm@dalgona.dev>
+with reserved font name "Neo둥근모 Pro" and "NeoDunggeunmo Pro".

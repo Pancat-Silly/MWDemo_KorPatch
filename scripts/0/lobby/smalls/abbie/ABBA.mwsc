@@ -1,0 +1,41 @@
+face p 0 0
+p
+line "애비는 좀...|p| 착했어."
+face s 0 1
+s
+line "응,|p| 정말 착하더라."
+face p 1 0
+p
+line "근데 이 타워를 좋아하는 건 좀 이해 안 돼..."
+face s 0 0
+s
+line "내 생각엔 애비가 그냥 모든 걸 좋아하는 성격인 것 같은데?"
+face s 1 0
+s
+line "게다가, 노스 블랙아웃 출신 애들 대부분이 마인드웨이브가 멋지다고 생각하잖아."
+p
+line "혹시 몰라,|p| 마인드스케이프가 물에다가 뭔가를 타고 있을지도."
+face s 0 2
+s
+line "지금 음모론이라도 퍼뜨리는 거야?"
+face s 1 0
+s
+line "마인드스케이프는 도시에서의 영향력이 엄청나서, 부자들이 이 도시로 이사 올 정도라고."
+face s 0 1
+s
+line "그러니깐 물 때문은 아닐 거야."
+face s 0 2
+s
+line "아니면 마인드스케이프가 다른 도시 수도까지 조작하고 있다고 생각하는 거야?"
+face p 0 0
+p
+line "음,|p| 그럴 가능성도 있겠다."
+
+
+
+
+
+setflag _0.smalls.abbie 2
+setflag _0.smalls.abbie.branch ABBA
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return

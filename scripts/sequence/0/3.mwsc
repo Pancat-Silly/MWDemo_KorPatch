@@ -1,0 +1,42 @@
+wait for marker line1
+pause
+speaker_voice announcer
+|style font fnt_pixel|참가자 여러분께 안내 말씀드립니다!
+|style font fnt_pixel|첫 번째 라운드가 곧 시작됩니다.
+clear
+resume
+
+
+pause at marker line2end
+no_text_continue_until marker line2end
+|style font fnt_pixel|10분 안에 비어 있는 엘리베이터에 탑승해 주세요.
+clear
+resume
+wait for marker line3
+pause at marker line3end
+speaker_icon smalls
+speaker_voice smalls
+좋아,|p| 행운을 빌어 판도라.|p|\n조금 있다가 보자.
+speaker_icon none
+resume
+jump to marker shot2start
+clear
+
+
+wait for marker line4
+pause at marker 0_3_4_end
+speaker_voice announcer_small
+|style font fnt_pixel|참가자 여러분,|p| 안녕하세요.
+|style font fnt_pixel|케이블을 신경 포트에 연결해 신원을 확인해 주세요.
+jump to marker 0_3_5_start
+clear
+resume
+wait for marker line5
+pause at marker 0_3_6_end
+|style font fnt_pixel|신원 확인됨:|p| 판도라.
+|style font fnt_pixel|곧 있으면 첫 번째 라운드가 시작됩니다.|p| 기다려 주시기 바랍니다.
+jump to marker 0_3_6_end
+clear
+resume
+loop start marker elevatorloopstart2
+loop end marker elevatorloopend2

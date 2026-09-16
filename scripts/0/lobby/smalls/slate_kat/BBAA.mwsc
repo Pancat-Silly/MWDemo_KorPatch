@@ -1,0 +1,45 @@
+face p 0 2
+p
+line "너 굳이 대화하던 중에 딴 곳으로 새야 했냐?"
+face p 0 4
+p
+line "갑자기 캣이랑 단둘이 대화할 준비 안 됐었다고."
+face s 2 0
+s
+line "에이,|p| 그래도 별일 없었잖아."
+face s 0 2
+s
+line "그치?"
+face p 0 0
+p
+line "..."
+face p 0 2
+p
+line "내가 그렇다 하면,|p| 넌 니 말 맞았다고 깐죽댈 거잖아."
+line "계속 그런 짓거리 해대는 꼴 보기 싫거든."
+face s 1 0
+s
+line "그래,|p| 알았어."
+face s 0 1
+s
+line "\"내가 뭐랬냐\" 같은 소리는 나중에 네가 고맙다고 할 때까지 아껴 둘게."
+face p 1 0
+p
+line "야,|p| 내가 너 받아주는 거 후회하게 하지 마라."
+s
+line "미안하긴 한데,|p| 이싼한테 비요 배우러 간 건 후회 안 되네."
+face s 1 0
+s
+line "더 이상 스포 당하기 싫어서 겨우 그만뒀다니까."
+face s 0 1
+s
+line "슬레이트가 넬버니아 정상에 침투하는 부분에서 완전히 빠져들었어."
+p
+line "알았으니까 아까처럼 또 탈주하지나 말아 줘.|p| 제발."
+s
+line "장담은 못 한다."
+
+setflag _0.smalls.slate_kat 2
+setflag _0.smalls.slate_kat.branch BBAA
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return

@@ -1,0 +1,67 @@
+face p 0 2
+face s 0 0
+p
+line "좋아, 이 게임이 일으키는 부작용에 대해서는 일단 접어두고."
+face p 0 0
+p
+line "게임에서 이길 확률을 높일 수 있는 방법은 없어?"
+face r 0 0
+r
+line "음, 솔직히 말하자면 감각적인 영역이 커서,"
+face r 1 0
+r
+line "제대로 된 조언을 해줄 순 없어."
+face r 0 0
+r
+line "먼저 기본적인 경험이 있어야지 효과가 있으니깐."
+face p 0 2
+p
+line "아니 그건 좀 아니지."
+line "내 머리 속을 온갖 걱정거리로 가득 채워놓고,"
+line "정말로 아무 조언도 못 해준다는 건 말도 안 되는-"
+face p 0 3
+p
+line "잠깐,|p| 너 설마 나한테 일부러 이러는 거야?"
+line "날 더 걱정시키게 만들어서 내 경기력 떨어뜨리려고?"
+face r 1 1
+r
+line "그럴 리가.|p| 전 세계에 있는 모든 마인드웨이브 프로가 나랑 똑같이 말할걸?"
+face p 0 0
+face s 0 2
+s
+line "판도라, 내 생각에는 진심으로 하는 말 같은데."
+face s 0 1
+s
+line "마인드웨이브에서 중요한 건 결국 경험이잖아."
+face s 0 0
+s
+line "나는 뭐랄까,|p| 단기적으로 도움이 될 만한 조언을 구하고 싶었는데."
+face r 2 0
+r
+line "뭐, 머리를 맑게 해주는 차 같은 거라도 원하는 거야?"
+face p 1 0
+p
+line "그건 아닌데..."
+face p 0 0
+p
+line "...어쩌면?|p| 그게 실제로 존재하긴 해?"
+face r 2 1
+r
+line "있다고는 하는데, 사실상 효과 없는 거랑 다름없어."
+face r 3 1
+r
+line "차,|p| 껌,|p| 심지어 마인드웨이브 실력을 올려준다는 헤어밴드까지."
+line "전부 다 헛소리야."
+face r 3 0
+r
+line "그런거 쓰고 우리 팀 입단 테스트 보러 오는 애들, 거의 다 탈락해."
+face p 1 2
+p
+line "그럼 난 답이 없다는 얘기네."
+face s 0 1
+s
+line "그렇게 생각하면, 당연한 얘기지."
+setflag _0.roxy.read.AAA 1
+setflag _0.roxy.branch AAA
+function lobby_tick_time
+goto script 0/lobby/roxy/questions

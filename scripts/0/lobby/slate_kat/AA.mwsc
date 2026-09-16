@@ -1,0 +1,66 @@
+face s 0 0
+face p 0 0
+p
+line "상금 타면 또 뭐 할지는 생각해 봤어?"
+face p 0 1
+p
+line "...아무 만화 얘기나 들어주는 사람들한테 선물 주는 거 말고."
+face s 2 0
+s
+line "그게 나쁜 생각인 것 마냥 말하네."
+face s 0 1
+s
+line "내 것도 줄 거지?"
+face l 0 0
+l
+line "그런 건 전혀 생각 안 해봤는데."
+line "한동안 눈여겨보고 있던 비요 초레어 판본이나 살까나."
+k
+line "맨날 하루 종일 봐 대는 그 애니를 또 산다고?"
+face p 4 0
+p
+line "흠,|p| 우리 아빠 판본도 비싸게 팔아치울 수 있으려나."
+l
+line "혹시 표지에 사악해 보이는 성이 그려진 거야?"
+face p 0 0
+p
+line "아니,|p| 아마 수정 구슬이었을걸."
+l
+line "아 아쉽네."
+line "그건 초판본이거든.|p| 웬만한 빈티지 가전제품 가게에서 재고 떨이로 팔아치우는 거야."
+face p 1 0
+p
+line "돈 한번 벌어 보려 했는데,|p| 아쉽네."
+l
+line "초판본에서는 결말이 개똥망이어서."
+line "애니를 완전히 새롭게 뜯어고쳤-|p 30| |skip| "
+face l 1 0
+k
+line "그나마 볼 만하게?"
+l
+line "뭐, 모르지.|p| 나도 못 봤거든!"
+face l 0 0
+l
+line "듣기로는 내용을 잔뜩 다듬었다는데,|p| 그 판본을 손에 넣은 사람들은 정작 개봉조차 하지 않아."
+line "그래서 인터넷에 아카이브된 것도 전혀 없고."
+face p 0 0
+p
+line "진짜 시시하네."
+face p 0 2
+face k 0 0
+p
+line "돈을 왕창 들여서 뭘 사놓았으면 왜 까지도 않고 진열장에나 둘 생각을 하지?"
+l
+line "내 말이 그 말이라니까."
+line "정작 쓰지도 못하는 걸 가진 거라고 부를 수는 있나?"
+face l 1 0
+l
+line "캣도 이거는 인정할걸?"
+face k 0 1
+k
+line "아니거든."
+
+setflag _0.slate_kat.read.AA 1
+setflag _0.slate_kat.branch AA
+function lobby_tick_time
+goto script 0/lobby/slate_kat/questions

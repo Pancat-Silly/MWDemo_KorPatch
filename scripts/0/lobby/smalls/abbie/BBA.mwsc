@@ -1,0 +1,46 @@
+face p 1 0
+p
+line "판다라..."
+face s 1 0
+s
+line "판다."
+face s 0 1
+s
+line "입에 착 붙는 별명 아니냐?"
+face p 0 2
+p
+line "아,|p| 몰라 진짜."
+s
+line "나중에 애비랑 놀러 다니려면 익숙해지는 게 좋을걸?"
+face s 0 2
+s
+line "차라리 지금부터 적응해 보는 게 어때?"
+face p 0 0
+p
+line "그건 그런데..."
+face p 1 0
+p
+line "애비는,|p| 우리랑 완전 다른 성격을 가지고 있잖아."
+line "우리랑 잘 어울릴 것 같지는 않은데."
+face p 1 2
+p
+line "오히려 우리가 걔한테 나쁜 영향을 주면 어떡해?"
+face s 1 0
+s
+line "에이,|p| 우리가 작정하고 나쁜 짓 한다 해도 길거리에서 서성거리거나 무단횡단만 하는 정도잖아."
+face p 0 2
+p
+line "너가 여기로 몰래 들어온 것도 추가해야지."
+face s 2 1
+s
+line "야,|p| 그거는 이번 한 번만 한 거잖아."
+face s 0 0
+s
+line "애비는 원래 그런 애라고."
+face s 0 1
+s
+line "솔직히 우리가 걔를 망치는 게 아니라,|p| 걔가 우리를 망칠 수도 있지."
+setflag _0.smalls.abbie 2
+setflag _0.smalls.abbie.branch BBA
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return

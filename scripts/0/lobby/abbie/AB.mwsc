@@ -1,0 +1,80 @@
+face s 1 0
+s
+line "노스 블랙아웃에서 온 거야?"
+face a 0 0
+a
+line "응!|p| 한 달 전에 여기로 이사 왔어!"
+face s 0 0
+s
+line "거긴 마음에 들었어?"
+face a 1 2
+a
+line "음,|p| 어릴 때 이후로 이런 도시에서 살아 본 적이 없어서.."
+face a 0 0
+a
+line "지금과는 달리|p| 그때는 제대로 된 사고도 못했어."
+face p 0 0
+p
+line "그치."
+face s 0 1
+s
+line "여기서 적응하기 힘들다고 들었는데, |p|화이팅."
+face a 3 1
+a
+line "화이팅?|p| 나 이미 여기 마음에 드는데?!"
+face a 1 0
+a
+line "우리 부모님은 이 도시에서 운전하면 속이 울렁거리신다고 하고,"
+face a 1 2
+a
+line "빌딩을 바라보는 건 아직도 무섭긴 해!"
+face a 2 2
+a
+line "그리고 내 친구들도 조금 그립고..."
+face p 0 2
+p
+line "잠깐,|p| 너 이 도시 좋아한다며?"
+face a 4 1
+a
+line "당연하지!|p| 한가운데에 이렇게 거대한 빌딩이 있는 도시를 어떻게 안 좋아할 수가 있어?"
+face p 0 0
+p
+line "음.. 그렇군."
+face a 0 0
+
+a
+line "아무튼 판다,|p| 난 이미 이 도시가 내 마음에 쏙 드는 중이야!"
+face s 0 0
+face a 1 0
+a
+line "여기선 내 고향에서 볼 수 있었던 곳보다 더 큰 취미 용품점이 있더라?"
+face a 3 1
+a
+line "거기선 있는 줄도 몰랐던 반짝이는 털실도 있어!"
+face p 0 2
+p
+line "그게 뭐 어때서?"
+face s 1 0
+s
+line "노스몰은 살짝 붐비긴 하지만, 멋지긴 해."
+face p 1 0
+p
+line "...그리고 조금 비싸기도 하고."
+face s 0 1
+s
+line "이스트 블랙아웃에 가보는 것도 좋았을 텐데."
+face a 1 0
+a
+line "우음,|p| 내가 전에 우리 부모님한테 이스트 블랙아웃에도 한번 가 보자고 물어봤었는데..."
+face a 0 0
+a
+line "...나쁜 동네에는 가지 말라고 하더라.."
+face s 2 0
+face p 0 0
+p
+line "?"
+setflag nickname_panda 1
+setflag _0.abbie.read.AB 1
+setflag _0.abbie.branch AB
+function lobby_tick_time
+goto script 0/lobby/abbie/questions

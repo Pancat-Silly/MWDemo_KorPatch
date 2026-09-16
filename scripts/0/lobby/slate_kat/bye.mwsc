@@ -1,0 +1,12 @@
+face p 0 0
+p
+line "스몰스,|p| 우리 슬슬 가봐야 될 것 같은데."
+face s 0 1
+s
+line "그래.|p| 너희들 이따 보자."
+face l 0 0
+l
+line "잘들 가라."
+face k 0 0
+k
+line "안녕."

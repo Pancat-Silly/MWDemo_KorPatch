@@ -1,0 +1,27 @@
+checkflag _0.tutorial.fails 0
+goto marker 0fails
+checkflag _0.tutorial.fails 1
+goto marker 1fails
+
+goto marker 2fails
+
+
+marker 0fails
+잘했어!
+이번엔 다른 조합의 인터페이스를 만나 보자!
+show_controls
+이번에는,|p| 방향키와 마우스를 동시에 사용하는 인터페이스야.|p|해낼 수 있겠어?
+goto marker end
+
+marker 1fails
+우와..|p| 이번에는 3D 시점이라니!|p| 이런 신기한 마이크로게임이 있을 줄이야..
+show_controls
+다시 한번 최선을 다 해 보자!
+goto marker end
+
+marker 2fails
+show_controls
+다시 한번 최선을 다 해 보자!
+goto marker end
+
+marker end

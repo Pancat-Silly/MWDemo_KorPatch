@@ -1,0 +1,106 @@
+face p 0 0
+p
+line "혹시 너희-|p 20| |skip| "
+face s 0 1
+s
+line "슬레이트,|p| 비탄의 요새 이야기나 좀 해줘라."
+face l 0 0
+face p 1 2
+l
+line "그럼.|p| 나야 좋지."
+line "비탄의 요새는, 옛날 30년대 애닌데-|p 20| |skip| "
+face k 0 1
+k
+line "다른 데 가서 하면 안 돼?"
+line "별로 재미없는 애니 얘기를 아무나 듣고 싶은 줄 아나."
+face l 1 0
+l
+line "오우,|p| 그래.|p| 그럼 나랑 스몰스는 저기 가 있을게."
+face l 0 0
+l
+line "너희도 오고 싶으면 오고."
+set l x -250
+wait 1 second
+set k x 0
+face s 0 2
+checkflag nickname_panda 1
+goto marker branch26y
+goto marker branch26n
+
+marker branch26y
+
+s
+line "금방 올게,|p| 판다."
+goto marker branch26e
+
+marker branch26n
+
+s
+line "금방 올게,|p| 판도라."
+
+goto marker branch26e
+
+marker branch26e
+
+set s x -200
+face p 0 0
+p
+line "..."
+face k 0 0
+k
+line "..."
+set p x 0
+k
+line "이싼이 애니 얘기하는 걸 한두 번 들어본 게 아니라..."
+line "쟤네 한참은 있다 올 거야."
+face p 1 0
+p
+line "..."
+k
+line "그,|p| 혹시 아까 물어보려던 거라도 있었어?"
+face p 4 0
+p
+line "뭐?"
+k
+line "방금 전에 뭐라 하려 했었잖아."
+line "이싼이랑 너 친구랑 떠나기 전에."
+face p 1 0
+p
+line "아,|p| 맞다,|p| 그..."
+face p 0 0
+p
+line "그냥 슬레이트한테 묻고 싶은 게 있었어."
+face p 0 2
+p
+line "아님 음...|p| 이싼이랬나?"
+k
+line "아."
+face p 0 0
+p
+line "응."
+k
+line "그냥 나한테 물어보지 그래?"
+face k 0 2
+k
+line "걔라면 내가 꽤 잘 아니까."
+face p 1 2
+p
+line "그래?|p| 그냥 걔네 집이 어떤지 궁금했는데."
+face k 0 0
+k
+line "걔네 집?|p| 그으으래 뭐,|p| 딱히 말할 거리는 없고."
+line "걔는 다 쓰러져가는 아파트에서 가족들이랑 같이 살아."
+line "좁기도 엄청 좁아 터졌어."
+face p 1 0
+p
+line "오우,|p| 고마워."
+face p 1 0
+p
+line "그럼 걔네 가족이 네 가족은 아니야?|p| 내 말은,|p| 너희 둘 가족 아닌 거지?"
+k
+line "응."
+setflag _0.pandora.alone 1
+setflag _0.slate_kat.read.BB 1
+setflag _0.slate_kat.branch BB
+function lobby_tick_time
+goto script 0/lobby/slate_kat/questions

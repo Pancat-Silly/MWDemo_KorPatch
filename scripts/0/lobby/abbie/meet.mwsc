@@ -1,0 +1,102 @@
+set a name mystery
+face s 0 1
+s
+line "저 여자는 어때?"
+p
+line "내가 대화 상대로는 선호하지 않는 스타일이네."
+face s 0 2
+s
+line "...그걸 노린 거야."
+face p 1 2
+p
+line "윽..."
+face p 0 2
+p
+line "그래.."
+face p 1 0
+p
+line "그 대신 네가 먼저 말 거는 거다."
+face s 2 1
+s
+line "그러지 뭐."
+face s 0 0
+s
+line "안녕"
+face a 1 0
+a
+line "..."
+face a 0 0
+a
+line "응?"
+face a 4 2
+a
+line "*허억*"
+face a 3 1
+a
+line "안녀어어어엉!!!"
+face p 4 0
+p
+line "안녕..."
+a
+line "|speed 1.5|여기 지금 너무 멋지지 않아?"
+face a 1 0
+a
+line "|speed 1.5|천장은 정말 높고!"
+face a 4 1
+a
+line "|speed 1.5|사람들도 지인짜 많아아!"
+face a 1 0
+a
+line "|speed 1.5|엇!|p| 보라색 분위기의 옷이네!"
+line "|speed 1.5|복장이 진짜 맘에 든다!|p| 가시 모양 팔찌하고 초승달 귀걸이까지...|p| 완전 귀여워!!"
+face a 0 0
+a
+line "|speed 1.5|그리고 옷 색깔도,|p| 이 행사에 맞춰서 입고 온 것 같아!|p|\n 진짜 좋다.."
+
+checkflag _0.iris.read.AB 1
+goto marker branch1y
+goto marker branch1n
+
+marker branch1y
+face p 1 0
+p
+line "여기서 네가 내 옷에 대해 두 번째로 말했어."
+face p 0 1
+p
+line "그래도 괜찮아,|p| 이렇게 옷에 대해 대화 받는 것도 좋네.|p| 고마워."
+goto marker branch1e
+
+marker branch1n
+face p 0 4
+p
+line "오 나는-"
+face p 4 0
+p
+line "난 그런 생각은 해 보진 않았는데.."
+line "어.. 고마워?"
+goto marker branch1e
+
+marker branch1e
+face p 0 4
+p
+line "|style color gray|(난 내가 \"귀엽다고\" 칭찬받을 거란 예상은 못 했는데.)"
+face a 0 0
+a
+line "그리고 옆에 있는\n 너도 멋져 보이네!"
+face a 1 2
+a
+line "..."
+face a 0 0
+a
+line "앗!|p| 까먹을 뻔했다,|p|\n혹시 이름이 뭐야?"
+face a 1 0
+a
+line "난 애비라고 해!|p| 내가 먼저 밝혔어야 했는데,|p| 히히.."
+set a name abbie
+face s 0 1
+s
+line "뭐,|p| 안녕 애비.|p| 나는 스몰스야,|p| 얘는 판도라고."
+setflag _0.abbie.met 1
+incflag _0.chars_met 1
+
+goto script 0/lobby/abbie/questions

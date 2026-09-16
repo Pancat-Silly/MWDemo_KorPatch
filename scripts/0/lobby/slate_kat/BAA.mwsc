@@ -1,0 +1,69 @@
+face p 0 1
+p
+line "솔직히 추상화를 그린다니 꽤 멋진걸."
+face p 0 0
+p
+line "나는 미술 시간에 그림만 그리면,|p| 실수만 잔뜩 하는데."
+face p 0 1
+p
+line "별다른 생각 없이 아무렇게나 칠해보는 것도 재밌겠네."
+face s 0 1
+checkflag nickname_panda 1
+goto marker branch26y
+goto marker branch26n
+
+marker branch26y
+
+s
+line "판다,|p| 너가 제출한 미술 과제만 봐도 추상화가 따로 없던데."
+goto marker branch26e
+
+marker branch26n
+
+s
+line "판도라,|p| 너가 제출한 미술 과제만 봐도 추상화가 따로 없던데."
+goto marker branch26e
+
+marker branch26e
+
+
+face l 1 0
+l
+line "야,|p| 캣이 그린 그림들은 진짜 개쩔어.|p| 내가 오죽하면 내 방을 얘 그림들로 채워 놓겠어?"
+face k 0 0
+k
+line "내가 그림 그리기 시작한 지...|p| 꽤 됐어.|p| 그냥 이리저리 뒹구는 완성작만 잔뜩이지."
+line "다 그린 그림에는 딱히 애착이 없거든."
+line "그냥 그리다 보면 마음이 안정되더라.|p| 어떻게 그려지든 상관없이."
+l
+line "니 그림들이 나한테 말 거는 것 같다고.|p| 진짜 너무 좋아."
+face p 0 0
+face k 0 1
+k
+line "그래 찐따야,|p| 네가 말해봤자 딱히 칭찬 같지도 않거든."
+face k 0 2
+k
+line "그래도 뭐,|p| 고마워."
+face s 0 0
+s
+line "혹시 너희끼리도 마인드웨이브 해?"
+face s 0 2
+s
+line "추상화가 정신 세계는 어떻게 생겼어?"
+k
+line "꽤 몽롱하다고는 들었는데."
+face l 0 0
+l
+line "우리가 오락실 가면,|p| 캣 상대들이 보통 엄청 당황하더라."
+face s 0 0
+face l 1 0
+l
+line "대체 왜 그러는 건지 모르겠어."
+face k 0 1
+k
+line "그냥 네가 괴짜라서 모르는 거 같은데."
+
+setflag _0.slate_kat.read.BAA 1
+setflag _0.slate_kat.branch BAA
+function lobby_tick_time
+goto script 0/lobby/slate_kat/questions

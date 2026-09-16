@@ -1,0 +1,50 @@
+face s 0 0
+face p 0 0
+p
+line "너네들 마인드웨이브는 자주 하는 편이야?"
+face l 0 0
+l
+line "야, 당연하지.|p| 우린 매주 토요일마다 오락실에서 같이 해."
+face s 1 0
+s
+line "하다 보면 비탄의 요새 내용도 자주 나오나?"
+face k 0 2
+k
+line "놀랍게도,|p| 별로 안 나와."
+line "솔직히 정말 상대하기 재밌다니까."
+line "이싼 덕후 짓에서 잠시나마 벗어나는 것도 좋고."
+face s 0 0
+l
+line "그럼.|p| 이 머릿속은 느긋한 분위기뿐이거든."
+face s 1 0
+s
+line "나도 자주 같이 해줄 사람이 있었으면 참 좋겠는데."
+face p 0 2
+p
+line "난 패스.|p| 마인드스케이프한테 내 뇌 스캔 데이터를 잔뜩 넘겨주고 싶지는 않아서."
+line "내가 여기 있는 이유는 이런 기회를 바보같이 놓칠 수는 없으니까 마지못해 온 거라고."
+l
+line "에이이이이,|p| 걱정 하지 마.|p| 걔네가 네 뇌를 스캔해도 어디다가 수집은 안 하거든."
+face l 1 0
+l
+line "우리가 처음 할 때 캣이 워낙 걱정했던지라 내가 이용 약관을 처음부터 끝까지 읽어 봤거든."
+face k 0 1
+face s 0 0
+k
+line "나도 마인드스케이프가 내 머릿속을 스캔해서 저장할까 봐 걱정했었거든.|p| 진짜 그랬다면 완전 소름 끼쳤겠지."
+face p 0 0
+p
+line "그래도 서로 정신 세계를 들여다보는 것도 좀 소름 끼치지 않아?"
+face p 1 0
+p
+line "이거는 조금 과하게 사적인 영역 같은데."
+face k 0 0
+k
+line "음, 딱히.|p| 난 생판 모르는 남들이 내 머릿속을 헤집는 게 더 싫은걸."
+face k 0 2
+k
+line "그래도 여기 왜 온 거냐면, 뭐,|p| 이런 기회를 놓치기에는 나도 아까워서."
+setflag _0.slate_kat.read.AAA 1
+setflag _0.slate_kat.branch AAA
+function lobby_tick_time
+goto script 0/lobby/slate_kat/questions

@@ -1,0 +1,36 @@
+face p 0 1
+p
+line "캣 꽤 멋있네."
+face s 0 1
+s
+line "응,|p| 꽤 괜찮더라."
+line "나도 작년 생일에 플래티넘 티켓 받았으면 참 좋았을 텐데."
+face p 0 2
+p
+line "그게 왜 필요해,|p| 어차피 몰래 들어왔으면서."
+face s 2 1
+s
+line "그렇긴 한데,|p| 지금 몰래 들어온 양심이 너무나도 찔린단 말이지."
+face s 0 1
+s
+line "내가 받은 최고의 선물은 리니지 뮤직이 만든 그 쩔어주는 빈티지 카세트플레이어였지."
+line "물론 누구 덕분은 절대 아니고 내가 직접 산 거지만."
+face p 0 2
+p
+line "야,|p| 너한테 그 쿠폰 준 게 나였잖아."
+face s 1 0
+s
+line "대체 언제 적 쿠폰을 준 거야?|p| 쓰러 갔을 땐 유효기간이 한참 지나 있던데."
+face p 1 0
+p
+line "아,|p| 그랬다면 미안.|p| 내가 돈에 약간 쪼들려서."
+face s 0 1
+s
+line "괜찮아.|p| 중요한 건 마음이지."
+face p 0 1
+p
+line "내가 우승하면,|p| 올해 선물은 좀 좋은 거 사줄게."
+setflag _0.smalls.slate_kat 2
+setflag _0.smalls.slate_kat.branch BABA
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return

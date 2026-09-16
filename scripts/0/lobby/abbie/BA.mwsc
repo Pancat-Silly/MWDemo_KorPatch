@@ -1,0 +1,102 @@
+face s 0 0
+s
+line "그런데 티켓은 어떻게 구한 거야?"
+a
+line "앗!|p| 나 이거 우리 동네에 있는 멋진 취미 용품점에서 구했어!"
+face a 1 0
+a
+line "용돈이 얼마 안 남아서,|p| 바느질할 때 쓰이는 바늘을 몇 개 사고...|p|"
+allow_player_input 0
+face a 0 0
+a
+line "|speed 2|...우음 그리고 엄청 큰 인형 솜도 샀어...|skip| "
+face a 1 0
+a
+line "|speed 2|원래는 몇 달 전에 샀던 분홍색 실도 다시 사고 싶었어.|skip| "
+
+
+
+a
+line "|speed 2.5|내가 이 토끼 인형을 만들고 있었거든!|skip| "
+face a 1 2
+a
+line "|speed 2.5|얘네들은 원래 내 방에 있는 창가에 쭉 늘어놓여져 있었는데, 내가 최근에 이사를 오는 바람에,|skip| "
+face a 0 0
+a
+line "|speed 2.5|전 집 보다 창문이 더 커져서 더 많이 만들어야 하거든!|skip| "
+
+
+face a 2 2
+a
+line "|speed 3|그런데,|p| 가게에서는 원래 썼었던 분홍색 실이 없었어서, 비슷해 보이는 색깔들을 전부 다 샀지 뭐야.|skip| "
+face a 1 0
+a
+line "|speed 3|그리고 원래 있던 토끼들을 그대로 따라 하기에는 뭐해서, 귀여운 파란색으로 만들기로 했지.|skip| "
+face a 4 0
+face p 4 0
+a
+line "|speed 5|근데, 이게 분홍색이랑 완전 너무 잘 어울리는 거 있지!|skip| "
+
+allow_player_input 1
+
+
+face a 0 0
+a
+line "아 맞다!|p| 나 인형도 만들었다!"
+face a 6 2
+a
+line "얘는 토미라고 해!"
+face s 0 1
+s
+line "안녕 토미."
+face a 6 0
+a
+line "..."
+face a 0 0
+a
+line "얘가 너한테 인사했어!"
+face p 0 0
+p
+line "그나저나 너 노스 블랙아웃에서 온 거,|p| 맞지?"
+a
+line "응!|p| 한 달 전에 거기로 이사 갔지.|p| 어떻게 알았어?"
+face p 0 1
+p
+line "그냥 운 좋게 맞힌 거지."
+face s 1 0
+s
+line "그런데 너가 산 것들 중에서 티켓은 어디서 나온 거야?"
+face a 4 0
+a
+line "아,|p| 맞다!|p| 내가 샀었던 반짝이 실 뭉치 안에 들어 있더라?"
+face s 0 0
+p
+line "완전 난리 났을 것 같은데?"
+face a 1 0
+a
+line "응!|p| 아직도 차 뒷좌석에서 반짝이가 나오더라."
+face p 0 0
+a
+line "그때 우리 부모님하고 나는 티켓 때문에 너무 신났어서 그런 사태가 일어난지 전혀 몰랐어."
+s
+line "지금은 아니신가 보네?"
+face a 2 2
+a
+line "응..|p| 애초에 날 믿지도 않았던 것 같아..."
+face a 0 0
+a
+line "그래도 우여곡절 끝에 나 혼자 여기까지 왔잖아!"
+line "그리고 난 반드시 이기고 말 거야!"
+face a 3 1
+a
+line "그다음엔,|p| 우리 부모님한테 나 혼자 집으로 돌아가겠다고 말할 거고!"
+face a 5 0
+a
+line "물론,|p| 내가 받은 상금은 절대 안 넘겨줄 거야!"
+face p 0 1
+p
+line "바로 그거지."
+setflag _0.abbie.read.BA 1
+setflag _0.abbie.branch BA
+function lobby_tick_time
+goto script 0/lobby/abbie/questions

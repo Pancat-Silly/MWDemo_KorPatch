@@ -1,0 +1,80 @@
+face s 0 1
+face p 0 0
+s
+line "사실 우리도 음악 좀 하거든, 돔."
+face d 0 0
+d
+line "진짜?|p| 쩐다."
+line "너희 둘 밴드라도 하는 거야?"
+face p 1 0
+p
+line "멤버가 우리 둘뿐이라,|p| 밴드라 부르기에는 조금 그렇지."
+face p 0 4
+p
+line "2인조라 부르는 게 맞겠다,|p| 스몰스는 신스 치고\n 나는 기타 치고."
+line "그렇다고 막 인지도가 엄청 높다거나 그런 건 아냐."
+face s 0 0
+s
+line "2인조라고 밴드가\n 아니란 법은 없지."
+face s 0 3
+s
+line "근데,|p| 우리가 가는 공연마다 네가 다른 이름을 써 대잖아?"
+face s 0 1
+s
+line "인지도 낮은 이유가\n 딱 그거 같은데."
+face p 0 1
+p
+line "그러면 있어 보이잖아.|p|\n 좀,|p| 웃기기도 하고."
+face p 1 1
+p
+line "그런다고 우리가 남들이 신경 쓸 정도로 유명한 것도 아니긴 한데."
+face d 0 0
+d
+line "너희 공연도 하냐?|p| 대단하네."
+face p 0 0
+face d 0 1
+d
+line "나도 라이브로 내 곡들 좀\n 틀어 보고 싶다."
+face s 0 0
+s
+line "할 수 있을걸?|p| 규모 작은 곳들은 웬만해선 아무나 받아주던데."
+face s 0 2
+face p 0 4
+s
+line "우리도 받아주잖아,|p|\n 판도라가 초를 쳐 대도."
+face p 0 2
+p
+line "어으,|p| 그게 뭐라고 아직까지 계속 매달리는지 모르겠네."
+face p 0 4
+p
+line "어차피 낡아빠진 쓰레기장만\n 골라 가는데."
+face p 1 1
+p
+line "거기다 보러 오는 사람들도\n 많아야 20명쯤이고.|p|\n 누가 우릴 알아보겠어?"
+face s 1 0
+s
+line "그게 문제지.|p| 이름을 하나로 고정하면 사람들이\n 알아볼지도 모르잖아."
+face s 2 1
+face p 1 0
+s
+line "그리고,|p| 내가 봤을 땐 딱히 웃기지도 않았거든?"
+face p 0 3
+face s 0 1
+p
+line "야,|p| 어떤 놈이 이게\n 안 웃기다 생각하냐?"
+face p 0 4
+p
+line "...생각해 보니 그런 것 같기도."
+d
+line "..."
+face p 0 1
+p
+line "아,|p| 음, 돔.|p| 다음 공연에는\n 우리랑 같이 와서 합주해 볼래?"
+line "악기 들어 줄 사람이 하나 더 있으면 좋겠는데."
+face d 0 0
+d
+line "와우,|p| 완전 좋은데?"
+setflag _0.dom.read.AA 1
+setflag _0.dom.branch AA
+function lobby_tick_time
+goto script 0/lobby/dom/questions
