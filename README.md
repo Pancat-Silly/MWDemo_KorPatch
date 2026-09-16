@@ -3,6 +3,7 @@
 ---
 
 **MINDWAVE Demo v1.0.3**
+
 **마인드웨이브 데모 한글패치**
 
 **By Pancat_Silly, geminican**
