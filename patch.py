@@ -96,7 +96,7 @@ class PatcherApp:
         # 버전 표기 (우측 하단)
         version_frame = tk.Frame(self.root, bg="#f0f2f5")
         version_frame.pack(fill="x", padx=30, pady=(0, 8))
-        ttk.Label(version_frame, text="MINDWAVE Demo v1.0.3 한글패치 v1.0.5.1", style="Version.TLabel").pack(anchor="e")
+        ttk.Label(version_frame, text="MINDWAVE Demo v1.0.3 한글패치 v1.0.5.2", style="Version.TLabel").pack(anchor="e")
 
     # ──────────────────────────────────────────────
     # 로그 출력
@@ -155,12 +155,14 @@ class PatcherApp:
     # 경로 관련
     # ──────────────────────────────────────────────
     def auto_detect(self):
-        target_path = r"C:\Program Files (x86)\Steam\steamapps\common\MINDWAVE Demo"
-        if os.path.exists(target_path):
-            self.path_var.set(target_path)
-            self.log("자동 감지: 경로를 찾았습니다.")
-        else:
-            self.log("자동 감지 실패: 해당 경로에 폴더가 존재하지 않습니다.")
+        target_paths = [r"C:\Program Files (x86)\Steam\steamapps\common\MINDWAVE Demo",r"C:\Program Files\Steam\steamapps\common\MINDWAVE Demo",r"D:\Program Files (x86)\Steam\steamapps\common\MINDWAVE Demo",r"C:\SteamLibrary\steamapps\MINDWAVE Demo",r"D:\SteamLibrary\steamapps\MINDWAVE Demo",r"E:\SteamLibrary\steamapps\MINDWAVE Demo"]
+        for target_path in target_paths:
+            if os.path.exists(target_path):
+                self.path_var.set(target_path)
+                self.log("자동 감지: 경로를 찾았습니다.")
+                return
+        
+        self.log("자동 감지 실패: 해당 경로에 폴더가 존재하지 않습니다.")
 
     def browse_folder(self):
         folder_selected = filedialog.askdirectory(title="게임이 설치된 폴더를 선택하세요")
