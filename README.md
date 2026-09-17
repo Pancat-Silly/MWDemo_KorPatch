@@ -12,7 +12,7 @@
 
 ## 한글패치 적용 방법
 
-`patch.exe` (또는 `patch.py`) 파일을 실행하세요.
+[릴리즈](https://github.com/Pancat-Silly/MWDemo_KorPatch/releases)에 있는 `patch.exe` (또는 `patch.py`) 파일을 다운 및 실행하세요.
 
 **찾아보기** 또는 **자동 감지** 버튼을 눌러 게임이 설치된 경로를 지정한 후,
 
@@ -24,7 +24,7 @@
 
 **설정 아이콘 → 관리 → 로컬 파일 탐색** 버튼을 클릭해 게임 파일 폴더를 열어주세요.
 
-패치 폴더에 있는 `loc` 폴더와 `scripts` 폴더를 게임 파일 폴더에 덮어씌워주세요.
+[릴리즈](https://github.com/Pancat-Silly/MWDemo_KorPatch/releases)에 있는 소스코드를 다운받은 후 `loc` 폴더와 `scripts` 폴더를 게임 파일 폴더에 덮어씌워주세요.
 
 `DeltaPatcher.exe`와 같은 프로그램을 외부에서 다운받아 실행시킨 다음,
 
