@@ -1,4 +1,4 @@
-# MWDemo_KorPatch
+# 마인드웨이브 데모 한글패치
 
 ---
 
@@ -12,7 +12,7 @@
 
 ## 한글패치 적용 방법
 
-[릴리즈](https://github.com/Pancat-Silly/MWDemo_KorPatch/releases)에 있는 `patch.exe` (또는 `patch.py`) 파일을 다운 및 실행하세요.
+[릴리즈](https://github.com/Pancat-Silly/MWDemo_KorPatch/releases/latest)에 배포된 `patch.exe` 파일을 다운 및 실행하세요.
 
 **찾아보기** 또는 **자동 감지** 버튼을 눌러 게임이 설치된 경로를 지정한 후,
 
@@ -24,7 +24,7 @@
 
 **설정 아이콘 → 관리 → 로컬 파일 탐색** 버튼을 클릭해 게임 파일 폴더를 열어주세요.
 
-[릴리즈](https://github.com/Pancat-Silly/MWDemo_KorPatch/releases)에 있는 소스코드를 다운받은 후 `loc` 폴더와 `scripts` 폴더를 게임 파일 폴더에 덮어씌워주세요.
+[릴리즈](https://github.com/Pancat-Silly/MWDemo_KorPatch/releases/latest)에 배포된 소스코드를 다운받은 후 `loc` 폴더와 `scripts` 폴더를 게임 파일 폴더에 덮어씌워주세요.
 
 `DeltaPatcher.exe`와 같은 프로그램을 외부에서 다운받아 실행시킨 다음,
 
@@ -38,6 +38,10 @@
 
 ## 관련 링크
 
-[한글패치 포스트](https://pancat-silly.tistory.com/1)
+[한글패치 원문 포스트](https://pancat-silly.tistory.com/1)
 
 [DeltaPatcher 깃허브 릴리즈](https://github.com/marco-calautti/DeltaPatcher/releases/)
+
+---
+
+※ 간편 패치 프로그램은 AI의 도움을 받아 제작되었으며, 그 외 모든 작업은 AI의 도움을 받지 않았습니다.
