@@ -1,0 +1,46 @@
+name: Build exe
+
+on:
+  workflow_dispatch:      
+  push:
+    tags:
+      - "v*"              
+
+permissions:
+  contents: write         
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install PyInstaller
+        run: pip install pyinstaller
+
+      - name: Build exe
+        shell: bash
+        run: |
+          XDELTA_FILE=$(ls *.xdelta | head -n 1)
+          pyinstaller --onefile --noconsole --name MindwavePatch \
+            --add-binary "xdelta3.exe;." \
+            --add-data "${XDELTA_FILE};." \
+            --add-data "loc;loc" \
+            --add-data "scripts;scripts" \
+            patch.py
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: MindwavePatch
+          path: dist/MindwavePatch.exe
+
+      - name: Attach to release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/MindwavePatch.exe
